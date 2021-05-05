@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {}
+    "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {}
   },
   "projects": {
-    "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {
+    "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+        "projectUniqueName": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
         "projectName": "CreativeGame",
-        "projectPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
-        "packagesPath": "C:\\Users\\ruica\\.nuget\\packages\\",
-        "outputPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
+        "projectPath": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+        "packagesPath": "C:\\Users\\box\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ruica\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\box\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -51,6 +51,10 @@
             "MonoGame.Framework.WindowsDX": {
               "target": "Package",
               "version": "[3.8.0.1641, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -71,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

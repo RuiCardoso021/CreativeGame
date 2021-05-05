@@ -8,6 +8,7 @@ namespace CreativeGame
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Scene _scene;
 
         public Game1()
         {
@@ -27,8 +28,7 @@ namespace CreativeGame
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
+            _scene = new Scene(this, "MainScene");
         }
 
         protected override void Update(GameTime gameTime)
@@ -45,7 +45,9 @@ namespace CreativeGame
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            _spriteBatch.Begin();
+            _scene.Draw(_spriteBatch, gameTime);
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/1.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/10.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/11.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/12.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/13.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/14.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/15.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/16.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/17.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/18.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/2.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/3.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/4.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/5.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/6.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/7.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/8.png</File>
+    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/9.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
