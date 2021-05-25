@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using CreativeGame.Classes;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -9,6 +10,7 @@ namespace CreativeGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private Scene _scene;
+        private Player _player;
 
         public Game1()
         {
@@ -20,7 +22,16 @@ namespace CreativeGame
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferHeight = 768;
+            _graphics.PreferredBackBufferWidth = 1024;
+            _graphics.ApplyChanges();
+
+            Debug.SetGraphicsDevice(GraphicsDevice);
+
+            new Camera(GraphicsDevice, height: 5f);
+            Camera.LookAt(Camera.WorldSize / 2f);
+
+            _player = new Player(this);
 
             base.Initialize();
         }
@@ -36,7 +47,7 @@ namespace CreativeGame
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            _player.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -47,6 +58,7 @@ namespace CreativeGame
 
             _spriteBatch.Begin();
             _scene.Draw(_spriteBatch, gameTime);
+            _player.Draw(_spriteBatch, gameTime);
             _spriteBatch.End();
 
             base.Draw(gameTime);

@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace CreativeGame
+namespace CreativeGame.Classes
 {
     public class Scene
     {

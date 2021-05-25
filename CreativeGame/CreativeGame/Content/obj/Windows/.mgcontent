@@ -4,26 +4,28 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/1.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/10.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/11.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/12.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/13.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/14.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/15.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/16.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/17.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/18.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/2.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/3.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/4.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/5.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/6.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/7.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/8.png</File>
-    <File>C:/Users/box/Desktop/Jogos Digitais/1Ano2Semestre/Tecnicas de Desenvolvimento de Jogos/Trabalho2/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/10.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/11.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/12.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/13.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/14.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/15.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/16.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/17.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/18.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/7.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/8.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

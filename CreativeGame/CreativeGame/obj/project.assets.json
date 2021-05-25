@@ -7417,25 +7417,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\box\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ruica\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+      "projectUniqueName": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
       "projectName": "CreativeGame",
-      "projectPath": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
-      "packagesPath": "C:\\Users\\box\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\box\\Desktop\\Jogos Digitais\\1Ano2Semestre\\Tecnicas de Desenvolvimento de Jogos\\Trabalho2\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
+      "projectPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+      "packagesPath": "C:\\Users\\ruica\\.nuget\\packages\\",
+      "outputPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\box\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ruica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7491,7 +7491,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
