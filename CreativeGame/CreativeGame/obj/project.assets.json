@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Genbox.VelcroPhysics.MonoGame/0.1.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
+        },
+        "compile": {
+          "lib/netstandard2.0/Genbox.VelcroPhysics.MonoGame.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Genbox.VelcroPhysics.MonoGame.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -316,6 +328,52 @@
         "build": {
           "build/MonoGame.Content.Builder.Task.props": {},
           "build/MonoGame.Content.Builder.Task.targets": {}
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSDL2-2.0.so.0": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libopenal.so.1": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libSDL2-2.0.0.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/osx/native/libopenal.1.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/soft_oal.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/soft_oal.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
         }
       },
       "MonoGame.Framework.WindowsDX/3.8.0.1641": {
@@ -2274,6 +2332,19 @@
     }
   },
   "libraries": {
+    "Genbox.VelcroPhysics.MonoGame/0.1.0-alpha": {
+      "sha512": "cttXKrJFa30GRSXpyL0XXci84IbV28sY10+G+IRVuac4BcEC1IlWLbGeMQIo101cJRZAwd7z3Cdq42ReiOAbGg==",
+      "type": "package",
+      "path": "genbox.velcrophysics.monogame/0.1.0-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "genbox.velcrophysics.monogame.0.1.0-alpha.nupkg.sha512",
+        "genbox.velcrophysics.monogame.nuspec",
+        "lib/netstandard2.0/Genbox.VelcroPhysics.MonoGame.dll",
+        "lib/netstandard2.0/Genbox.VelcroPhysics.MonoGame.xml"
+      ]
+    },
     "Libuv/1.9.1": {
       "sha512": "uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
       "type": "package",
@@ -2748,6 +2819,31 @@
         "tools/netcoreapp3.1/any/x64/soft_oal.dll",
         "tools/netcoreapp3.1/any/x86/SDL2.dll",
         "tools/netcoreapp3.1/any/x86/soft_oal.dll"
+      ]
+    },
+    "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+      "sha512": "rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
+      "type": "package",
+      "path": "monogame.framework.desktopgl/3.8.0.1641",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/MonoGame.Framework.DesktopGL.targets",
+        "lib/net452/MonoGame.Framework.dll",
+        "lib/net452/MonoGame.Framework.xml",
+        "lib/netstandard2.0/MonoGame.Framework.dll",
+        "lib/netstandard2.0/MonoGame.Framework.xml",
+        "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+        "monogame.framework.desktopgl.nuspec",
+        "runtimes/linux-x64/native/libSDL2-2.0.so.0",
+        "runtimes/linux-x64/native/libopenal.so.1",
+        "runtimes/osx/native/libSDL2-2.0.0.dylib",
+        "runtimes/osx/native/libopenal.1.dylib",
+        "runtimes/win-x64/native/SDL2.dll",
+        "runtimes/win-x64/native/soft_oal.dll",
+        "runtimes/win-x86/native/SDL2.dll",
+        "runtimes/win-x86/native/soft_oal.dll"
       ]
     },
     "MonoGame.Framework.WindowsDX/3.8.0.1641": {
@@ -7411,6 +7507,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Genbox.VelcroPhysics.MonoGame >= 0.1.0-alpha",
       "MonoGame.Content.Builder.Task >= 3.8.0.1641",
       "MonoGame.Framework.WindowsDX >= 3.8.0.1641",
       "Newtonsoft.Json >= 13.0.1"
@@ -7460,6 +7557,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Genbox.VelcroPhysics.MonoGame": {
+            "target": "Package",
+            "version": "[0.1.0-alpha, )"
+          },
           "MonoGame.Content.Builder.Task": {
             "target": "Package",
             "version": "[3.8.0.1641, )"

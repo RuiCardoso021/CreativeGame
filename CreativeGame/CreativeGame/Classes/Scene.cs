@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using Genbox.VelcroPhysics.Dynamics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
@@ -25,7 +26,10 @@ namespace CreativeGame.Classes
                     float y = (float)(image["y"] ?? 0);
                     string imageName = (string)image["imageName"];
                     string imageFilename = $"assets/orig/images/{imageName}";
-                    _sprites.Add(new Sprite(game, imageFilename, new Vector2(x, y)));
+                    Sprite sprite = new Sprite(game, imageFilename, new Vector2(x, y));
+                    _sprites.Add(sprite);
+                    sprite.AddRectangleBody(game.Services.GetService<World>(),
+                        isKinematic: true);
                 }
             }
         }

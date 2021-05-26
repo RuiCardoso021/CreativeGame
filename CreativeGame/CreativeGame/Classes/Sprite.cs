@@ -9,17 +9,17 @@ namespace CreativeGame.Classes
     {
         // TODO: we should not duplicate textures on each instance
         private Texture2D _texture;
-        private Collider _collider;
-        public Collider Collider => _collider;
-
         public Sprite(Game game, string textureName, Vector2 position) : base(textureName, position)
         {
             _texture = game.Content.Load<Texture2D>(textureName);
             _size = _texture.Bounds.Size.ToVector2() / 128f;  // TODO: HARDCODED!
             _position = position + new Vector2(_size.X, _size.Y) / 2f; // Anchor in the middle
+        }
 
-            _collider = new AABBCollider(this);
-            _collider.EnableDebug(true);
+
+        public override void Update(GameTime gameTime)
+        {
+            base.Update(gameTime);
         }
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
@@ -34,7 +34,7 @@ namespace CreativeGame.Classes
             spriteBatch.Draw(_texture, pos, null, Color.White,
                 0f, anchor, scale, SpriteEffects.None, 0);
 
-            _collider.Draw(spriteBatch, gameTime);
+            base.Draw(spriteBatch, gameTime);
         }
     }
 }

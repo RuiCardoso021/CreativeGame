@@ -1,4 +1,5 @@
 ﻿using CreativeGame.Classes;
+using Genbox.VelcroPhysics.Dynamics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -12,12 +13,17 @@ namespace CreativeGame
         private Scene _scene;
         private Player _player;
 
+        private World _world;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            _world = new World(new Vector2(0, -9.82f));
+            Services.AddService(_world);
 
+            new KeyboardManager(this);
         }
 
         protected override void Initialize()
@@ -33,6 +39,8 @@ namespace CreativeGame
 
             _player = new Player(this);
 
+
+
             base.Initialize();
         }
 
@@ -47,6 +55,7 @@ namespace CreativeGame
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             _player.Update(gameTime);
 
             base.Update(gameTime);
