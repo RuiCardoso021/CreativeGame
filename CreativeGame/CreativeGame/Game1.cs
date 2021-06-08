@@ -1,8 +1,9 @@
-﻿using CreativeGame.Classes;
-using Genbox.VelcroPhysics.Dynamics;
+﻿using Genbox.VelcroPhysics.Dynamics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using CreativeGame.Classes;
+using Microsoft.Xna.Framework.Audio;
 
 namespace CreativeGame
 {
@@ -12,8 +13,12 @@ namespace CreativeGame
         private SpriteBatch _spriteBatch;
         private Scene _scene;
         private Player _player;
-
+        private NPC _npc;
         private World _world;
+        private SoundEffect _sound;
+        private SoundEffectInstance _soundBackground;
+
+        public Player Player => _player;
 
         public Game1()
         {
@@ -38,8 +43,7 @@ namespace CreativeGame
             Camera.LookAt(Camera.WorldSize / 2f);
 
             _player = new Player(this);
-
-
+            _npc = new NPC(this);
 
             base.Initialize();
         }
@@ -47,6 +51,8 @@ namespace CreativeGame
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _sound = Content.Load<SoundEffect>("background_sound");
+            _soundBackground = _sound.CreateInstance();
             _scene = new Scene(this, "MainScene");
         }
 
@@ -57,6 +63,8 @@ namespace CreativeGame
 
             _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             _player.Update(gameTime);
+            _npc.Update(gameTime);
+            _soundBackground.Play();
 
             base.Update(gameTime);
         }
@@ -67,7 +75,9 @@ namespace CreativeGame
 
             _spriteBatch.Begin();
             _scene.Draw(_spriteBatch, gameTime);
+            _npc.Draw(_spriteBatch, gameTime);
             _player.Draw(_spriteBatch, gameTime);
+
             _spriteBatch.End();
 
             base.Draw(gameTime);

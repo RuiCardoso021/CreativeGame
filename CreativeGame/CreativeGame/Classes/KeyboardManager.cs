@@ -24,7 +24,7 @@ namespace CreativeGame.Classes
         GoingUp,
         GoingDown
     }
-    
+
     public class KeyboardManager : GameComponent
     {
         // Variáveis de classe (suporte ao Singleton)
@@ -42,13 +42,13 @@ namespace CreativeGame.Classes
                           }
          */
         private Dictionary<Keys, Dictionary<KeysState, List<Action>>> _actions;
-        
+
         public KeyboardManager(Game game) : base(game)
         {
             // Validar que Singleton ainda não foi criado.
             if (_instance != null) throw new Exception("KeyboardManager constructor called twice");
             _instance = this; // guardar a única instância no singleton.
-            
+
             _keyboardState = new Dictionary<Keys, KeysState>();
             _actions = new Dictionary<Keys, Dictionary<KeysState, List<Action>>>();
             game.Components.Add(this);   // "auto instalável"
@@ -58,35 +58,35 @@ namespace CreativeGame.Classes
         public static void Register(Keys key, KeysState state, Action code)
         {
             // Do we have this key already in the dictionary?
-            if (!_instance._actions.ContainsKey(key)) 
+            if (!_instance._actions.ContainsKey(key))
                 _instance._actions[key] = new Dictionary<KeysState, List<Action>>();
-            
+
             // For this key, do we have that state created?
             if (!_instance._actions[key].ContainsKey(state))
                 _instance._actions[key][state] = new List<Action>();
-            
+
             // Add the code to the key/state pair
             _instance._actions[key][state].Add(code);
             // Add the key to the keyboard state dictionary
             _instance._keyboardState[key] = KeysState.Up;
         }
 
-        public static bool IsKeyDown(Keys k) => 
+        public static bool IsKeyDown(Keys k) =>
             _instance._keyboardState.ContainsKey(k) && _instance._keyboardState[k] == KeysState.Down;
-        
-        public static bool IsKeyUp(Keys k) => 
+
+        public static bool IsKeyUp(Keys k) =>
             _instance._keyboardState.ContainsKey(k) && _instance._keyboardState[k] == KeysState.Up;
-        public static bool IsGoingDown(Keys k) => 
+        public static bool IsGoingDown(Keys k) =>
             _instance._keyboardState.ContainsKey(k) && _instance._keyboardState[k] == KeysState.GoingDown;
-        public static bool IsGoingUp(Keys k) => 
+        public static bool IsGoingUp(Keys k) =>
             _instance._keyboardState.ContainsKey(k) && _instance._keyboardState[k] == KeysState.GoingUp;
 
-        
+
         public override void Update(GameTime gameTime)
         {
             KeyboardState state = Keyboard.GetState();
             List<Keys> pressedKeys = state.GetPressedKeys().ToList();
-            
+
             // Process pressed keys
             foreach (Keys key in pressedKeys)
             {
@@ -96,20 +96,20 @@ namespace CreativeGame.Classes
                 // What was the previous state, and decide what is our next state
                 switch (_keyboardState[key])
                 {
-                   /*   Estado Anterior  Agora   Guardo
-                    *      DOWN           DOWN    Down
-                    *    GOING DOWN       DOWN    Down
-                    *       UP            DOWN    Going Down
-                    *    GOING UP         DOWN    Going Down
-                    */
-                   case KeysState.Down: 
-                   case KeysState.GoingDown:
-                       _keyboardState[key] = KeysState.Down;
-                       break;
-                   case KeysState.Up:
-                   case KeysState.GoingUp:
-                       _keyboardState[key] = KeysState.GoingDown;
-                       break;
+                    /*   Estado Anterior  Agora   Guardo
+                     *      DOWN           DOWN    Down
+                     *    GOING DOWN       DOWN    Down
+                     *       UP            DOWN    Going Down
+                     *    GOING UP         DOWN    Going Down
+                     */
+                    case KeysState.Down:
+                    case KeysState.GoingDown:
+                        _keyboardState[key] = KeysState.Down;
+                        break;
+                    case KeysState.Up:
+                    case KeysState.GoingUp:
+                        _keyboardState[key] = KeysState.GoingDown;
+                        break;
                 }
             }
             // Processed released keys
@@ -136,7 +136,7 @@ namespace CreativeGame.Classes
                         break;
                 }
             }
-            
+
             // Invocar as funções registadas!
             foreach (Keys key in _actions.Keys)
             {

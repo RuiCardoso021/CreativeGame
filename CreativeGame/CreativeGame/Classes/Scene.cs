@@ -26,7 +26,11 @@ namespace CreativeGame.Classes
                     float y = (float)(image["y"] ?? 0);
                     string imageName = (string)image["imageName"];
                     string imageFilename = $"assets/orig/images/{imageName}";
-                    Sprite sprite = new Sprite(game, imageFilename, new Vector2(x, y));
+
+                    // Load texture here, and send it to the sprite object
+                    Texture2D texture = game.Content.Load<Texture2D>(imageFilename);
+                    Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x, y), true);
+
                     _sprites.Add(sprite);
                     sprite.AddRectangleBody(game.Services.GetService<World>(),
                         isKinematic: true);

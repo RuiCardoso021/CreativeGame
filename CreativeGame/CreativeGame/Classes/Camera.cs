@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CreativeGame.Classes
 {
-    class Camera
+    public class Camera
     {
         private static Camera _camera; // Instance from the Camera singleton
 
@@ -77,9 +77,10 @@ namespace CreativeGame.Classes
 
         private Rectangle _rectangle2Pixels(Rectangle rect)
         {
-            Vector2 pos = _position2Pixels(rect.Location.ToVector2());
+            Vector2 center = _position2Pixels(rect.Location.ToVector2());
             Vector2 dim = _length2Pixels(rect.Size.ToVector2());
-            return new Rectangle(pos.ToPoint(), dim.ToPoint());
+            Vector2 location = center - dim / 2f;
+            return new Rectangle(location.ToPoint(), dim.ToPoint());
         }
         public static RectangleF Rectangle2Pixels(RectangleF rect)
         {
@@ -88,9 +89,10 @@ namespace CreativeGame.Classes
 
         private RectangleF _rectangle2Pixels(RectangleF rect)
         {
-            Vector2 pos = _position2Pixels(rect.Location);
+            Vector2 center = _position2Pixels(rect.Center);
             Vector2 dim = _length2Pixels(rect.Size);
-            return new RectangleF(pos, dim);
+            Vector2 location = center - dim / 2f;
+            return new RectangleF(location, dim);
         }
 
         public static Vector2 Position2Pixels(Vector2 pos)

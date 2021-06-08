@@ -45,7 +45,7 @@ namespace CreativeGame.Classes
             float radius = Camera.Length2Pixels(new Vector2(_radius, 0)).X;
             if (_debug)
             {
-                _draw.DrawCircle(spriteBatch, 
+                _draw.DrawCircle(spriteBatch,
                     Camera.Position2Pixels(_center), radius, Color.Yellow);
             }
         }

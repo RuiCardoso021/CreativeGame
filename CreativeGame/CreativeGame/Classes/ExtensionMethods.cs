@@ -10,7 +10,7 @@ namespace CreativeGame.Classes
         {
             return new Vector2(-v.Y, v.X);
         }
-        
+
         // Vector2 v = new Vector2(x, y);
         // x = v.Coord(0) ==> v[0]
         // y = v.Coord(1) ==> v[1]
@@ -29,6 +29,19 @@ namespace CreativeGame.Classes
         public static GameObject GameObject(this Fixture f)
         {
             return f.Body.UserData as GameObject;
+        }
+
+        /// <summary>
+        /// Rotates vector around origin.
+        /// </summary>
+        /// <param name="pt">The point to be rotated</param>
+        /// <param name="angle">The angle to apply (radians)</param>
+        /// <returns>A new vector after rotating around origin</returns>
+        public static Vector2 Rotate(this Vector2 pt, float angle)
+        {
+            float c = MathF.Cos(-angle);
+            float s = MathF.Sin(-angle);
+            return new Vector2(pt.X * c - pt.Y * s, pt.X * s + pt.Y * c);
         }
     }
 }

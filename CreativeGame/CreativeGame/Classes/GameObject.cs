@@ -9,6 +9,7 @@ namespace CreativeGame.Classes
     // Father class for all game-objects, being them static or dynamic
     public class GameObject
     {
+        protected float _rotation;
         protected Vector2 _position, _size;
         protected string _name;
         public Vector2 Position => _position;
@@ -16,6 +17,7 @@ namespace CreativeGame.Classes
         public string Name => _name;
         public Body Body;
         public bool Debug = true;
+
 
         public GameObject(string name) : this(name, Vector2.Zero)
         {
@@ -31,7 +33,10 @@ namespace CreativeGame.Classes
         public virtual void Update(GameTime gameTime)
         {
             if (Body != null && !Body.IsKinematic)
+            {
                 _position = Body.Position;
+                _rotation = -Body.Rotation;
+            }
         }
 
         public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime)
@@ -48,12 +53,20 @@ namespace CreativeGame.Classes
                             {
                                 Vector2 p1 = p.Vertices[i];
                                 Vector2 p2 = p.Vertices[(i + 1) % p.Vertices.Count];
-                                p1 += _position;
-                                p2 += _position;
+
+                                p1 = p1.Rotate(_rotation) + _position;
+                                p2 = p2.Rotate(_rotation) + _position;
+
                                 p1 = Camera.Position2Pixels(p1);
                                 p2 = Camera.Position2Pixels(p2);
                                 debug.DrawLine(spriteBatch, p1, p2, Color.Green);
                             }
+                            break;
+                        case CircleShape c:
+                            Vector2 center = Camera.Position2Pixels(
+                                Body.Position + c.Position);
+                            float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
+                            debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
                             break;
                     }
                 }
@@ -85,5 +98,7 @@ namespace CreativeGame.Classes
 
             Body.FixedRotation = true;
         }
+
+
     }
 }
