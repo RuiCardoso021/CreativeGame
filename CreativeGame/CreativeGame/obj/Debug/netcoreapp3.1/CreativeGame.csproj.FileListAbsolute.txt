@@ -175,5 +175,50 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_009.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_010.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_011.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.csprojAssemblyReference.cache
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\background_sound.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (1).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (10).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (11).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (12).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (13).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (14).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (15).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (16).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (2).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (3).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (4).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (5).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (6).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (7).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (8).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (9).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (1).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (10).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (11).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (12).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (13).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (2).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (3).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (4).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (5).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (6).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (7).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (8).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (9).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(1).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(10).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(11).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(12).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(13).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(2).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(3).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(4).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(5).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(6).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(7).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(8).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(9).xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\jump_sound.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Button\Button.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Fonts\File.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.csprojAssemblyReference.cache

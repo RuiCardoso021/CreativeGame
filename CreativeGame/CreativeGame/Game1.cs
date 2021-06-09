@@ -15,10 +15,18 @@ namespace CreativeGame
         private Player _player;
         private NPC _npc;
         private World _world;
-        private SoundEffect _sound;
+        private SoundEffect _soundB;
         private SoundEffectInstance _soundBackground;
+        private float _volume = 0.1f;
+        private State _currentState;
+        private State _nextState;
+
+        public SoundEffect _soundJ;
+        public SoundEffectInstance _soundJump;
+        public bool activeMenu = false;
 
         public Player Player => _player;
+        public void ChangeState(State state){ _nextState = state; }
 
         public Game1()
         {
@@ -33,15 +41,17 @@ namespace CreativeGame
 
         protected override void Initialize()
         {
+            IsMouseVisible = true;
+
             _graphics.PreferredBackBufferHeight = 768;
             _graphics.PreferredBackBufferWidth = 1024;
             _graphics.ApplyChanges();
-
+            
             Debug.SetGraphicsDevice(GraphicsDevice);
-
+            
             new Camera(GraphicsDevice, height: 5f);
             Camera.LookAt(Camera.WorldSize / 2f);
-
+            
             _player = new Player(this);
             _npc = new NPC(this);
 
@@ -51,34 +61,62 @@ namespace CreativeGame
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            _sound = Content.Load<SoundEffect>("background_sound");
-            _soundBackground = _sound.CreateInstance();
+            _soundB = Content.Load<SoundEffect>("background_sound");
+            _soundBackground = _soundB.CreateInstance();
+            _soundBackground.Volume = _volume-0.05f;
+            _soundJ = Content.Load<SoundEffect>("jump_sound");
+            _soundJump = _soundJ.CreateInstance();
+            _soundJump.Volume = _volume;
             _scene = new Scene(this, "MainScene");
+            _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
 
-            _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-            _player.Update(gameTime);
-            _npc.Update(gameTime);
-            _soundBackground.Play();
+            if (activeMenu)
+            {
+                _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+                _player.Update(gameTime);
+                _npc.Update(gameTime);
+                _soundBackground.Play();
+            }
+            else
+            {
+                if (_nextState != null)
+                {
+                    _currentState = _nextState;
 
+                    _nextState = null;
+                }
+                _currentState.PostUpdate(gameTime);
+                _currentState.Update(gameTime);
+            }
+
+            
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            
 
-            _spriteBatch.Begin();
-            _scene.Draw(_spriteBatch, gameTime);
-            _npc.Draw(_spriteBatch, gameTime);
-            _player.Draw(_spriteBatch, gameTime);
+            if (activeMenu)
+            {
+                GraphicsDevice.Clear(Color.CornflowerBlue);
+                _spriteBatch.Begin();
+                _scene.Draw(_spriteBatch, gameTime);
+                _npc.Draw(_spriteBatch, gameTime);
+                _player.Draw(_spriteBatch, gameTime);
 
-            _spriteBatch.End();
+                _spriteBatch.End();
+            }
+            else
+            {
+                GraphicsDevice.Clear(Color.Blue);
+                _currentState.Draw(gameTime, _spriteBatch);
+            }
+
 
             base.Draw(gameTime);
         }
