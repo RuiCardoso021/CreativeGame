@@ -39,10 +39,19 @@ namespace CreativeGame.Classes
             Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
 
-            spriteBatch.Draw(_texture, pos, null, Color.White,
+            if (Name == "idle")
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                _rotation, new Vector2(anchor.X-15f, anchor.Y), scale,
+                _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                0);
+            else
+                spriteBatch.Draw(_texture, pos, null, Color.White,
                 _rotation, anchor, scale,
                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                 0);
+
+
+
 
             base.Draw(spriteBatch, gameTime);
         }

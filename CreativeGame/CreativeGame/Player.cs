@@ -54,7 +54,7 @@ namespace CreativeGame
 
             AddRectangleBody(
                 _game.Services.GetService<World>(),
-                width: _size.X / 2f
+                width: _size.X / 2.2f
                 //height: _size.Y / 1.5f
             ); // kinematic is false by default
 
