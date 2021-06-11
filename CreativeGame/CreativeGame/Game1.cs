@@ -18,6 +18,7 @@ namespace CreativeGame
         private World _world;
         private Coin _coin;
         private Gift _gift;
+        private SnowHouse _snowHouse;
         private SoundEffect _soundB;
         private SoundEffectInstance _soundBackground;
         private float _volume = 0.1f;
@@ -31,7 +32,7 @@ namespace CreativeGame
         public Player Player => _player;
         public Coin Coin => _coin;
         public Gift Gift => _gift;
-
+        public SnowHouse SnowHouse => _snowHouse;
 
         public void ChangeState(State state){ _nextState = state; }
 
@@ -62,6 +63,7 @@ namespace CreativeGame
             
             _player = new Player(this);
             _coin = new Coin(this);
+            _snowHouse = new SnowHouse(this);
             _gift = new Gift(this);
             _npc = new NPC(this);
 
@@ -89,6 +91,7 @@ namespace CreativeGame
                 _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
                 _player.Update(gameTime);
                 _coin.Update(gameTime);
+                _snowHouse.Update(gameTime);
                 _gift.Update(gameTime);
                 _npc.Update(gameTime);
                 _soundBackground.Play();
@@ -119,6 +122,7 @@ namespace CreativeGame
                 _scene = new Scene(this, "MainScene");
                 _player = new Player(this);
                 _coin = new Coin(this);
+                _snowHouse = new SnowHouse(this);
                 _gift = new Gift(this);
                 _npc = new NPC(this);
             }
@@ -129,6 +133,7 @@ namespace CreativeGame
                 _spriteBatch.Begin();
                 _scene.Draw(_spriteBatch, gameTime);
                 _npc.Draw(_spriteBatch, gameTime);
+                _snowHouse.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
                 _coin.Draw(_spriteBatch, gameTime);
                 _gift.Draw(_spriteBatch, gameTime);
