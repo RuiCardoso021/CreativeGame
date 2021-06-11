@@ -100,7 +100,15 @@ namespace CreativeGame
 
         protected override void Draw(GameTime gameTime)
         {
-            
+            if (Keyboard.GetState().IsKeyDown(Keys.R))
+            {
+                foreach(Body b in _world.BodyList)
+                    _world.RemoveBody(b);
+
+                _scene = new Scene(this, "MainScene");
+                _player = new Player(this);
+                _npc = new NPC(this);
+            }
 
             if (activeMenu)
             {
