@@ -16,6 +16,8 @@ namespace CreativeGame
         private Player _player;
         public NPC _npc;
         private World _world;
+        private Coin _coin;
+        private Gift _gift;
         private SoundEffect _soundB;
         private SoundEffectInstance _soundBackground;
         private float _volume = 0.1f;
@@ -27,6 +29,10 @@ namespace CreativeGame
         public bool activeMenu = false;
 
         public Player Player => _player;
+        public Coin Coin => _coin;
+        public Gift Gift => _gift;
+
+
         public void ChangeState(State state){ _nextState = state; }
 
         public Game1()
@@ -55,6 +61,8 @@ namespace CreativeGame
             Camera.LookAt(Camera.WorldSize / 2f);
             
             _player = new Player(this);
+            _coin = new Coin(this);
+            _gift = new Gift(this);
             _npc = new NPC(this);
 
             base.Initialize();
@@ -80,6 +88,8 @@ namespace CreativeGame
             {
                 _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
                 _player.Update(gameTime);
+                _coin.Update(gameTime);
+                _gift.Update(gameTime);
                 _npc.Update(gameTime);
                 _soundBackground.Play();
             }
@@ -108,6 +118,8 @@ namespace CreativeGame
 
                 _scene = new Scene(this, "MainScene");
                 _player = new Player(this);
+                _coin = new Coin(this);
+                _gift = new Gift(this);
                 _npc = new NPC(this);
             }
 
@@ -118,6 +130,8 @@ namespace CreativeGame
                 _scene.Draw(_spriteBatch, gameTime);
                 _npc.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
+                _coin.Draw(_spriteBatch, gameTime);
+                _gift.Draw(_spriteBatch, gameTime);
 
                 _spriteBatch.End();
             }

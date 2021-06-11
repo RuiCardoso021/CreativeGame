@@ -33,7 +33,14 @@
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Stone.png</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree1.png</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree2.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin1.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin2.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin3.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin4.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin5.png</File>
+    <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin6.png</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_0.png</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_1.png</File>
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_10.png</File>
@@ -105,6 +112,13 @@
     <File>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

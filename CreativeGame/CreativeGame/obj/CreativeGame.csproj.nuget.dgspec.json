@@ -1,23 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {}
+    "D:\\Engenharia de Jogos\\TecnicasDesenvJogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {}
   },
   "projects": {
-    "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {
+    "D:\\Engenharia de Jogos\\TecnicasDesenvJogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+        "projectUniqueName": "D:\\Engenharia de Jogos\\TecnicasDesenvJogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
         "projectName": "CreativeGame",
-        "projectPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
-        "packagesPath": "C:\\Users\\ruica\\.nuget\\packages\\",
-        "outputPath": "F:\\Escola\\1º LDJD\\2º Semestre\\tec desenvolvimento jogos\\CreativeGame_v.final\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
+        "projectPath": "D:\\Engenharia de Jogos\\TecnicasDesenvJogos\\CreativeGame\\CreativeGame\\CreativeGame\\CreativeGame.csproj",
+        "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
+        "outputPath": "D:\\Engenharia de Jogos\\TecnicasDesenvJogos\\CreativeGame\\CreativeGame\\CreativeGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ruica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -79,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
