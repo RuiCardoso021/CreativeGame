@@ -14,7 +14,7 @@ namespace CreativeGame
     {
         enum Status
         {
-            Flying, Patroling, Chasing
+            Flying, Patroling, Chasing, Die
         }
         private Status _status = Status.Flying;
 
@@ -78,6 +78,7 @@ namespace CreativeGame
             };
         }
 
+
         public override void Update(GameTime gameTime)
         {
             if (_status != Status.Flying && _collisions.Count == 0)
@@ -85,6 +86,7 @@ namespace CreativeGame
                 Body.LinearVelocity = Vector2.Zero;
                 _status = Status.Flying;
             }
+
             // Chasing
             if (_status == Status.Chasing)
             {

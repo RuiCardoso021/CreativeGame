@@ -62,6 +62,7 @@ namespace CreativeGame
                 {
                     _collided = true;
                     ImpactPos = _position + (b.GameObject().Position - _position) / 2f;
+
                 }
             };
         }

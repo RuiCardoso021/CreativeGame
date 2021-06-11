@@ -14,7 +14,7 @@ namespace CreativeGame
 
         private Scene _scene;
         private Player _player;
-        private NPC _npc;
+        public NPC _npc;
         private World _world;
         private SoundEffect _soundB;
         private SoundEffectInstance _soundBackground;
@@ -46,18 +46,19 @@ namespace CreativeGame
 
             _graphics.PreferredBackBufferHeight = 768;
             _graphics.PreferredBackBufferWidth = 1024;
+
             _graphics.ApplyChanges();
             
             Debug.SetGraphicsDevice(GraphicsDevice);
             
-            new Camera(GraphicsDevice, height: 5f);
+            new Camera(GraphicsDevice, height: 10f);
             Camera.LookAt(Camera.WorldSize / 2f);
             
             _player = new Player(this);
             _npc = new NPC(this);
 
             base.Initialize();
-        }
+        }   
 
         protected override void LoadContent()
         {
