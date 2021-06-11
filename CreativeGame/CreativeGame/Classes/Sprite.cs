@@ -40,10 +40,18 @@ namespace CreativeGame.Classes
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
 
             if (Name == "player")
-                spriteBatch.Draw(_texture, pos, null, Color.White,
-                _rotation, new Vector2(anchor.X-15f, anchor.Y), scale,
-                _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
-                0);
+                if (_direction == Direction.Right)
+                    spriteBatch.Draw(_texture, pos, null, Color.White,
+                    _rotation, new Vector2(anchor.X-15f, anchor.Y), scale,
+                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                    0);
+                else
+                {
+                    spriteBatch.Draw(_texture, pos, null, Color.White,
+                    _rotation, new Vector2(anchor.X + 15f, anchor.Y), scale,
+                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                    0);
+                }
             else
                 spriteBatch.Draw(_texture, pos, null, Color.White,
                 _rotation, anchor, scale,
