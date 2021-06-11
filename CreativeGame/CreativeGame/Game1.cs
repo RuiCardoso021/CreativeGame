@@ -10,7 +10,8 @@ namespace CreativeGame
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        private SpriteBatch _spriteBatch    ;
+
         private Scene _scene;
         private Player _player;
         private NPC _npc;
@@ -113,7 +114,7 @@ namespace CreativeGame
             }
             else
             {
-                GraphicsDevice.Clear(Color.Blue);
+                GraphicsDevice.Clear(Color.CornflowerBlue);
                 _currentState.Draw(gameTime, _spriteBatch);
             }
 

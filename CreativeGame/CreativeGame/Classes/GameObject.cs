@@ -41,8 +41,8 @@ namespace CreativeGame.Classes
 
         public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            if (Debug && Body != null)
-            {
+            if (false)
+            {//Debug && Body != null
                 Debug debug = new Debug();
                 foreach (Fixture f in Body.FixtureList)
                 {

@@ -30,7 +30,7 @@ namespace CreativeGame
         private List<Texture2D> _walkFrames;
 
         public Player(Game1 game) :
-            base("idle",
+            base("player",
                 new Vector2(0f, 4f),
                 Enumerable.Range(1, 16)
                     .Select(
@@ -76,18 +76,25 @@ namespace CreativeGame
                 KeysState.GoingDown,
                 () =>
                 {
-                    if (_isGrounded) { Body.ApplyForce(new Vector2(0, 300f)); _game._soundJump.Play(); }
+                    if (_isGrounded) {
+
+                        Body.ApplyForce(new Vector2(0, 300f)); _game._soundJump.Play(); 
+                    }
                 });
             KeyboardManager.Register(
                 Keys.A,
                 KeysState.Down,
-                () => { Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
+                () => { if (Body.LinearVelocity.X > -3.5f )
+                            Body.ApplyForce(new Vector2(-10, 0)); 
+                    dir = new Vector2(-10, 0); });  //Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
             KeyboardManager.Register(
                 Keys.D,
                 KeysState.Down,
-                () => { Body.ApplyForce(new Vector2(10, 0)); dir = new Vector2(10, 0); }); //Body.LinearVelocity = new Vector2(5, 0); });
+                () => { if (Body.LinearVelocity.X < 3.5f) 
+                            Body.ApplyForce(new Vector2(10, 0)); 
+                    dir = new Vector2(10, 0); });  //Body.ApplyForce(new Vector2(10, 0)); dir = new Vector2(10, 0); }); //Body.LinearVelocity = new Vector2(5, 0); });
 
-            KeyboardManager.Register(
+                    KeyboardManager.Register(
                 Keys.Enter, 
                 KeysState.GoingDown,
                 () => { Bullet bullet = new Bullet(_fireBall, _position, dir, game.Services.GetService<World>()); _objects.Add(bullet); } );
