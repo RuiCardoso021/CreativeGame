@@ -84,9 +84,12 @@ namespace CreativeGame
             KeyboardManager.Register(
                 Keys.A,
                 KeysState.Down,
-                () => { if (Body.LinearVelocity.X > -3.5f )
+                () => { 
+                    dir = new Vector2(-10, 0); 
+                    if (Body.LinearVelocity.X > -3.5f )
                             Body.ApplyForce(new Vector2(-10, 0)); 
-                    dir = new Vector2(-10, 0); });  //Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
+                    
+                });  //Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
             KeyboardManager.Register(
                 Keys.D,
                 KeysState.Down,
