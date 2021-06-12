@@ -6,7 +6,7 @@
        
 ## Instrucoes:
 
-O jogador comeca com 4 vidas (contando com a vida 0), 0 moedas e 0 prendas.\
+O jogador comeca com 3 vidas, 0 moedas e 0 prendas.\
 O jogador pode andar livremente pelo mapa.\
 O jogador pode disparar bolas de neve de forma a matar os inimigos.\
 O jogador so pode disparar bolas de neve depois de ter apanhado a prenda.\
