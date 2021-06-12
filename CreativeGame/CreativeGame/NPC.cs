@@ -29,14 +29,7 @@ namespace CreativeGame
         private HashSet<Fixture> _collisions;
 
         public NPC(Game1 game) :
-            base("npc",
-                new Vector2(5.5f, 4f),
-                Enumerable.Range(0, 12)
-                    .Select(
-                        n => game.Content.Load<Texture2D>(
-                            $"Inimigo/Minotaur_03_Idle_{n:D3}")
-                        )
-                    .ToArray())
+            base("npc", new Vector2(5.5f, 4f), Enumerable.Range(0, 12).Select(n => game.Content.Load<Texture2D>($"Inimigo/Minotaur_03_Idle_{n:D3}")).ToArray())
         {
             _collisions = new HashSet<Fixture>();
             _idleFrames = _textures; // loaded by the base construtor
@@ -50,15 +43,9 @@ namespace CreativeGame
 
             _game = game;
 
-            AddRectangleBody(
-                _game.Services.GetService<World>(),
-                width: _size.X / 2f
-            ); // kinematic is false by default
+            AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2f); // kinematic is false by default
 
-            Fixture sensor = FixtureFactory.AttachRectangle(
-                _size.X / 3f, _size.Y * 0.05f,
-                4, new Vector2(0, -_size.Y / 2f),
-                Body);
+            Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
 
             Body.Friction = 0f;
@@ -101,12 +88,9 @@ namespace CreativeGame
                 }
                 else
                 {
-                    _direction = _position.X > _game.Player.Position.X
-                        ? Direction.Left : Direction.Right;
-                    Body.LinearVelocity = new
-                        Vector2(_game.Player.Position.X - _position.X, 0);
+                    _direction = _position.X > _game.Player.Position.X ? Direction.Left : Direction.Right;
+                    Body.LinearVelocity = new Vector2(_game.Player.Position.X - _position.X, 0);
                     Body.LinearVelocity.Normalize();
-
                 }
             }
             // Patrolling

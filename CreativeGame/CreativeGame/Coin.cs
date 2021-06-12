@@ -11,6 +11,7 @@ namespace CreativeGame
     public class Coin : AnimatedSprite, ITempObject
     {
         private bool rotating = false;
+        public int nrMoedas = 3;
 
         public bool IsDead() => _currentTexture == 0 && rotating;
 

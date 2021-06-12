@@ -419,3 +419,227 @@ D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGam
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin4.xnb
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin5.xnb
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_10.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle_9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (1).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (10).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (11).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (12).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (13).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (2).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (3).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (4).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (5).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (6).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (7).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (8).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (9).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_10.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk_9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\10.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\11.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\12.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\13.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\14.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\15.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\16.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\17.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\18.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Crate.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Crystal.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\gift.9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\IceBox.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Igloo.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Sign1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Sign2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\SnowMan.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Stone.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Tree1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Tree2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\background_sound.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Button\Button.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_10.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_11.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_12.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_13.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_14.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_15.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_16.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_17.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_18.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_19.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_20.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_21.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_22.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_23.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_24.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\fireball.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Fonts\File.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (1).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (10).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (11).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (12).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (13).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (14).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (15).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (16).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (2).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (3).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (4).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (5).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (6).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (7).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (8).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (9).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_000.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_001.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_002.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_003.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_004.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_005.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_006.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_007.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_008.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_009.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_010.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Minotaur_03_Idle_011.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_10.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_11.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_12.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_13.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_14.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_15.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_16.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_17.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_18.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_19.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_20.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_21.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_22.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_23.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_24.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_25.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_26.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_27.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_9.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\jump_sound.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Life\heart.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola2.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola3.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola4.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola5.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola6.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola7.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola8.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\throwSnowballSound.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(1).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(10).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(11).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(12).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(13).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(2).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(3).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(4).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(5).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(6).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(7).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(8).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk(9).xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.exe
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.deps.json
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.runtimeconfig.json
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.runtimeconfig.dev.json
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\CreativeGame.pdb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Genbox.VelcroPhysics.MonoGame.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Microsoft.VisualBasic.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.Direct2D1.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.Direct3D11.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.Direct3D9.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.DXGI.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.Mathematics.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.MediaFoundation.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.XAudio2.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\SharpDX.XInput.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\debian-x64\native\libuv.so
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\fedora-x64\native\libuv.so
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\opensuse-x64\native\libuv.so
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libuv.dylib
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\rhel-x64\native\libuv.so
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.csproj.AssemblyReference.cache
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.AssemblyInfoInputs.cache
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.AssemblyInfo.cs
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.csproj.CoreCompileInputs.cache
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.csproj.CopyComplete
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.dll
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.pdb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.genruntimeconfig.cache

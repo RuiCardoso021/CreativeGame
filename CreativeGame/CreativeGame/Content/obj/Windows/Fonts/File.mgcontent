@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Fonts/File.spritefont</SourceFile>
-  <SourceTime>2021-06-10T02:27:11.1683162+01:00</SourceTime>
-  <DestFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Fonts/File.xnb</DestFile>
-  <DestTime>2021-06-11T23:38:39.6510105+01:00</DestTime>
+  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Fonts/File.spritefont</SourceFile>
+  <SourceTime>2021-06-12T17:00:14.202708+01:00</SourceTime>
+  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Fonts/File.xnb</DestFile>
+  <DestTime>2021-06-12T17:08:04.6637135+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

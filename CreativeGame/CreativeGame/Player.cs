@@ -21,7 +21,7 @@ namespace CreativeGame
 
         private Game1 _game;
         private bool _isGrounded = false;
-        private Texture2D _fireBall;
+        private Texture2D _snowBall;
         private Vector2 dir = new Vector2(30, 0);
 
         private List<ITempObject> _objects;
@@ -29,39 +29,20 @@ namespace CreativeGame
         private List<Texture2D> _idleFrames;
         private List<Texture2D> _walkFrames;
 
-        public Player(Game1 game) :
-            base("player",
-                new Vector2(0f, 4f),
-                Enumerable.Range(1, 16)
-                    .Select(
-                        n => game.Content.Load<Texture2D>($"Idle ({n})")
-                        )
-                    .ToArray())
+        public Player(Game1 game) : base("player", new Vector2(0f, 4f), Enumerable.Range(1, 16).Select(n => game.Content.Load<Texture2D>($"Idle ({n})")).ToArray())
         {
             _idleFrames = _textures; // loaded by the base construtor
 
-            _walkFrames = Enumerable.Range(1, 13)
-                .Select(
-                    n => game.Content.Load<Texture2D>($"Walk({n})")
-                )
-                .ToList();
+            _walkFrames = Enumerable.Range(1, 13).Select(n => game.Content.Load<Texture2D>($"Walk({n})")).ToList();
 
             _game = game;
 
-            
-            _fireBall = _game.Content.Load<Texture2D>("fireball");
+            _snowBall = _game.Content.Load<Texture2D>("SnowBall/bola0");
             _objects = new List<ITempObject>();
 
-            AddRectangleBody(
-                _game.Services.GetService<World>(),
-                width: _size.X / 2.2f
-                //height: _size.Y / 1.5f
-            ); // kinematic is false by default
+            AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2.2f/*height: _size.Y / 1.5f*/); // kinematic is false by default
 
-            Fixture sensor = FixtureFactory.AttachRectangle(
-                _size.X / 3f, _size.Y * 0.05f,
-                4, new Vector2(0, -_size.Y / 2f),
-                Body);
+            Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
 
             sensor.OnCollision = (a, b, contact) =>
@@ -71,37 +52,32 @@ namespace CreativeGame
             };
             sensor.OnSeparation = (a, b, contact) => _isGrounded = false;
 
-            KeyboardManager.Register(
-                Keys.Space,
-                KeysState.GoingDown,
-                () =>
-                {
-                    if (_isGrounded) {
+            KeyboardManager.Register(Keys.Space, KeysState.GoingDown, () =>
+            {
+                if (_isGrounded)
+                    Body.ApplyForce(new Vector2(0, 300f));
+                _game._soundJump.Play();
 
-                        Body.ApplyForce(new Vector2(0, 300f)); _game._soundJump.Play(); 
-                    }
-                });
-            KeyboardManager.Register(
-                Keys.A,
-                KeysState.Down,
-                () => { 
-                    dir = new Vector2(-10, 0); 
-                    if (Body.LinearVelocity.X > -3.5f )
-                            Body.ApplyForce(new Vector2(-10, 0)); 
-                    
-                });  //Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
-            KeyboardManager.Register(
-                Keys.D,
-                KeysState.Down,
-                () => { if (Body.LinearVelocity.X < 3.5f) 
-                            Body.ApplyForce(new Vector2(10, 0)); 
-                    dir = new Vector2(10, 0); });  //Body.ApplyForce(new Vector2(10, 0)); dir = new Vector2(10, 0); }); //Body.LinearVelocity = new Vector2(5, 0); });
+            });
+            KeyboardManager.Register(Keys.A, KeysState.Down, () =>
+            {
+                dir = new Vector2(-10, 0);
+                if (Body.LinearVelocity.X > -3.5f)
+                    Body.ApplyForce(new Vector2(-10, 0));
 
-                    KeyboardManager.Register(
-                Keys.Enter, 
-                KeysState.GoingDown,
-                () => { Bullet bullet = new Bullet(_fireBall, _position, dir, game.Services.GetService<World>()); _objects.Add(bullet); } );
+            });  //Body.ApplyForce(new Vector2(-10, 0)); dir = new Vector2(-10, 0); }); //Body.LinearVelocity = new Vector2(-5, 0); });
+            KeyboardManager.Register(Keys.D, KeysState.Down, () =>
+            {
+                if (Body.LinearVelocity.X < 3.5f)
+                    Body.ApplyForce(new Vector2(10, 0));
+                dir = new Vector2(10, 0);
+            });  //Body.ApplyForce(new Vector2(10, 0)); dir = new Vector2(10, 0); }); //Body.LinearVelocity = new Vector2(5, 0); });
 
+            KeyboardManager.Register(Keys.Enter, KeysState.GoingDown, () =>
+            {
+                Bullet bullet = new Bullet(_snowBall, _position, dir, game.Services.GetService<World>()); _objects.Add(bullet);
+                _game._soundThrowSnowball.Play();
+            });
         }
 
         public override void Update(GameTime gameTime)
@@ -129,13 +105,7 @@ namespace CreativeGame
             base.Update(gameTime);
             Camera.LookAt(_position);
 
-            _objects.AddRange(_objects
-                .Where(obj => obj is Bullet)
-                .Cast<Bullet>()
-                .Where(b => b.Collided)
-                .Select(b => new Explosion(_game, b.ImpactPos))
-                .ToArray()
-            );
+            _objects.AddRange(_objects.Where(obj => obj is Bullet).Cast<Bullet>().Where(b => b.Collided).Select(b => new Explosion(_game, b.ImpactPos)).ToArray());
             _objects = _objects.Where(b => !b.IsDead()).ToList();
         }
 

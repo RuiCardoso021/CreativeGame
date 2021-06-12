@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/jump_sound.wav</SourceFile>
-  <SourceTime>2021-06-10T02:27:11.9583301+01:00</SourceTime>
-  <DestFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/jump_sound.xnb</DestFile>
-  <DestTime>2021-06-11T23:38:42.2086839+01:00</DestTime>
+  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/jump_sound.wav</SourceFile>
+  <SourceTime>2021-06-12T17:00:15.2061579+01:00</SourceTime>
+  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/jump_sound.xnb</DestFile>
+  <DestTime>2021-06-12T17:08:05.3304112+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

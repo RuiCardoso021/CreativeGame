@@ -12,7 +12,7 @@ namespace CreativeGame.Classes
 {
     public class MenuState : State
     {
-        private List<Component> _components;
+        public static Dictionary<String, Component> _components;
 
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
@@ -36,20 +36,47 @@ namespace CreativeGame.Classes
 
             loadGameButton.Click += LoadGameButton_Click;
 
-            var quitGameButton = new Button(buttonTexture, buttonFont)
+            var creditsGameButton = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(420, 300),
+                Text = "Credits",
+            };
+
+            creditsGameButton.Click += CreditsGameButton_Click;
+
+            var highScoreGameButton = new Button(buttonTexture, buttonFont)
+            {
+                Position = new Vector2(420, 350),
+                Text = "HighScore",
+            };
+
+            highScoreGameButton.Click += HighScoreGameButton_Click;
+
+            var backGameButton = new Button(buttonTexture, buttonFont)
+            {
+                Position = new Vector2(420, 400),
+                Text = "Back",
+            };
+
+            backGameButton.Click += BackGameButton_Click;
+
+            var quitGameButton = new Button(buttonTexture, buttonFont)
+            {
+                Position = new Vector2(420, 450),
                 Text = "Quit Game",
             };
 
             quitGameButton.Click += QuitGameButton_Click;
 
-            _components = new List<Component>()
-      {
-        newGameButton,
-        loadGameButton,
-        quitGameButton,
-      };
+            _components = new Dictionary<String, Component>()
+            {
+                {"newGame",newGameButton},
+                {"loadGame",loadGameButton},
+                {"credits", creditsGameButton},
+                {"highScore", highScoreGameButton},
+                {"back", backGameButton},
+                {"quit",quitGameButton},
+            };
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -57,19 +84,39 @@ namespace CreativeGame.Classes
             spriteBatch.Begin();
 
             foreach (var component in _components)
-                component.Draw(gameTime, spriteBatch);
+            {
+                if (component.Key == "back" && !_game.activeMenu)
+                {
+                    continue;
+                }
+
+                component.Value.Draw(gameTime, spriteBatch);
+            }
 
             spriteBatch.End();
+        }
+
+        private void NewGameButton_Click(object sender, EventArgs e)
+        {
+            _game.activeMenu = true;
         }
 
         private void LoadGameButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Load Game");
         }
-
-        private void NewGameButton_Click(object sender, EventArgs e)
+        private void CreditsGameButton_Click(object sender, EventArgs e)
         {
-            _game.activeMenu = true;
+            _game.activeCredits = true;
+        }
+        private void HighScoreGameButton_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Score");
+        }
+        public void BackGameButton_Click(object sender, EventArgs e)
+        {
+            _game.activeMenu = false;
+            _game.activeCredits = false;
         }
 
         public override void PostUpdate(GameTime gameTime)
@@ -80,7 +127,7 @@ namespace CreativeGame.Classes
         public override void Update(GameTime gameTime)
         {
             foreach (var component in _components)
-                component.Update(gameTime);
+                component.Value.Update(gameTime);
         }
 
         private void QuitGameButton_Click(object sender, EventArgs e)
