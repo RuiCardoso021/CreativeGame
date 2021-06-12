@@ -51,8 +51,12 @@ namespace CreativeGame
 
             sensor.OnCollision = (a, b, contact) =>
             {
-                _collisions.Add(b);  // FIXME FOR BULLETS
-                _game.IsVictory();
+                string[] accept = { "player" };
+                if (accept.Contains(b.GameObject().Name))
+                {
+                    _collisions.Add(b);  // FIXME FOR BULLETS
+                    _game.IsVictory();
+                }
             };
             sensor.OnSeparation = (a, b, contact) =>
             {
