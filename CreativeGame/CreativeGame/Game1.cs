@@ -115,7 +115,7 @@ namespace CreativeGame
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
             _gift = new Gift(this);
-            _life = new Life(this);
+
             _npc = new NPC(this);
             this.Life.lifeCount--;
 

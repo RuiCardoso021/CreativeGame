@@ -643,3 +643,41 @@ C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcor
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.dll
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.pdb
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.genruntimeconfig.cache
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_1.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_10.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_11.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_12.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_13.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_14.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_15.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_16.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_17.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_18.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_19.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_2.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_20.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_21.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_22.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_23.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_24.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_25.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_26.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_27.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_3.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_4.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_5.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_6.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_7.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_8.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Inimigo\Screenshot_9.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Life\heart.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola0.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola1.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola2.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola3.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola4.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola5.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola6.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola7.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola8.xnb
+D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\throwSnowballSound.xnb
