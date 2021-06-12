@@ -24,7 +24,7 @@ namespace CreativeGame
         public bool Collided => _collided;
         public bool IsDead() => _currentTexture == 0 && rotating;
 
-        public SnowHouse(Game game/*, Vector2 position*/) : base("snowhouse", /*position*/new Vector2(2f, 2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/Igloo")).ToArray())
+        public SnowHouse(Game game/*, Vector2 position*/) : base("snowhouse", /*position*/new Vector2(45f, 2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/Igloo")).ToArray())
         {
             _fps = 20;
 
