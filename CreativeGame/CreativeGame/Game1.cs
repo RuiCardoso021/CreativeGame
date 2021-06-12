@@ -75,7 +75,7 @@ namespace CreativeGame
             Camera.LookAt(Camera.WorldSize / 2f);
 
             _player = new Player(this);
-            _coin = new Coin(this);
+            _coin = new Coin(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
@@ -110,7 +110,7 @@ namespace CreativeGame
 
             _scene = new Scene(this, "MainScene");
             _player = new Player(this);
-            _coin = new Coin(this);
+            _coin = new Coin(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
@@ -134,7 +134,7 @@ namespace CreativeGame
                 {
                     _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
                     _player.Update(gameTime);
-                    _coin.Update(gameTime);
+                    if (!_coin.IsDead()) _coin.Update(gameTime);
                     //_enemy2.Update(gameTime);
                     _snowHouse.Update(gameTime);
                     //_snowBall.Update(gameTime);
@@ -197,7 +197,7 @@ namespace CreativeGame
                 _snowHouse.Draw(_spriteBatch, gameTime);
                 //_snowBall.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
-                _coin.Draw(_spriteBatch, gameTime);
+                if (!_coin.IsDead()) _coin.Draw(_spriteBatch, gameTime);
                 //_enemy2.Draw(_spriteBatch, gameTime);
                 if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
                 //_life.Draw(_spriteBatch, gameTime);
