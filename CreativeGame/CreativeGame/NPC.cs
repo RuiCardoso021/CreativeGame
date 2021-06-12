@@ -16,9 +16,11 @@ namespace CreativeGame
         {
             Flying, Patroling, Chasing, Die
         }
-        private Status _status = Status.Flying;
+        private Status _status = Status.Patroling;
 
         private Game1 _game;
+
+        public bool IsDead() => _status == Status.Die;
 
         private List<Texture2D> _idleFrames;
         private List<Texture2D> _walkFrames;
@@ -47,11 +49,10 @@ namespace CreativeGame
 
             Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
-
-            Body.Friction = 0f;
-
             sensor.OnCollision = (a, b, contact) =>
             {
+                if (_status == Status.Die) return;
+
                 _collisions.Add(b);  // FIXME FOR BULLETS
                 if (_status == Status.Flying && b.GameObject().Name != "bullet")
                 {
@@ -61,13 +62,30 @@ namespace CreativeGame
             };
             sensor.OnSeparation = (a, b, contact) =>
             {
+                if (_status == Status.Die) return;
+
                 _collisions.Remove(b);
+            };
+
+            Body.Friction = 0f;
+            Body.IsSensor = false;
+            Body.OnCollision = (a, b, contact) =>
+            {
+                if (_status != Status.Die && b.GameObject().Name == "bullet")
+                {
+                    System.Diagnostics.Debug.WriteLine("NPC foi atingido.");
+                    _status = Status.Die;
+                }
             };
         }
 
 
         public override void Update(GameTime gameTime)
         {
+            System.Diagnostics.Debug.WriteLine($"X: {_position.X} | Y: {_position.Y}.");
+
+            if (_status == Status.Die) return;
+
             if (_status != Status.Flying && _collisions.Count == 0)
             {
                 Body.LinearVelocity = Vector2.Zero;
@@ -93,6 +111,7 @@ namespace CreativeGame
                     Body.LinearVelocity.Normalize();
                 }
             }
+
             // Patrolling
             float _patrolDistance = 2f;
             if (_status == Status.Patroling)

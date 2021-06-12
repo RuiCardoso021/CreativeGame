@@ -12,37 +12,35 @@ namespace CreativeGame
 {
     public class Gift : AnimatedSprite, ITempObject
     {
-        private HashSet<Fixture> _collisions;
-        private Game1 _game;
-        private bool rotating = false;
-        
-        public bool IsDead() => _currentTexture == 0 && rotating;
 
-        public Gift(Game game/*, Vector2 position*/) : base("gift", /*position*/new Vector2(2f,2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
+        private Game1 _game;
+        private bool _collided = false;
+
+        public bool Catched => _collided;
+        public bool IsDead() => Catched;
+
+        public Gift(Game game, World world) : base("gift", new Vector2(2f,0.2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
         {
             _fps = 20;
-            _collisions = new HashSet<Fixture>();
 
             _game = (Game1)game;
 
-            //AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2f); // kinematic is false by default
+            Body = BodyFactory.CreateCircle(world, .25f, 1f, _position, BodyType.Static, this);
+            Body.IsSensor = true;
 
-            /*Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
-            sensor.IsSensor = true;
-
-            sensor.OnCollision = (a, b, contact) =>
+            Body.OnCollision = (thisGift, collider, contact) =>
             {
-                _collisions.Add(b);  // FIXME FOR BULLETS
+                if (!_collided && collider.GameObject().Name == "player")
+                {
+                    System.Diagnostics.Debug.WriteLine("Toquei na gift.");
+                    _collided = true;
+                }
             };
-            sensor.OnSeparation = (a, b, contact) =>
-            {
-                _collisions.Remove(b);
-            };*/
+
         }
 
         public override void Update(GameTime gameTime)
         {
-            if (_currentTexture > 0) rotating = true;
             base.Update(gameTime);
         }
 

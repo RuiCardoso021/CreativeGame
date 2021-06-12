@@ -75,7 +75,8 @@ namespace CreativeGame
 
             KeyboardManager.Register(Keys.Enter, KeysState.GoingDown, () =>
             {
-                Bullet bullet = new Bullet(_snowBall, _position, dir, game.Services.GetService<World>()); _objects.Add(bullet);
+                Bullet bullet = new Bullet(_snowBall, _position, dir, game.Services.GetService<World>());
+                _objects.Add(bullet);
                 _game._soundThrowSnowball.Play();
             });
         }

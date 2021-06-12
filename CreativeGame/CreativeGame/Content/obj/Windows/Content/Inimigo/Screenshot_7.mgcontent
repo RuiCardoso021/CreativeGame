@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_7.png</SourceFile>
-  <SourceTime>2021-06-12T17:44:15.640912+01:00</SourceTime>
-  <DestFile>D:/Engenharia de Jogos/TecnicasDesenvJogos/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Inimigo/Screenshot_7.xnb</DestFile>
-  <DestTime>2021-06-12T20:09:37.9360708+01:00</DestTime>
+  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_7.png</SourceFile>
+  <SourceTime>2021-06-12T11:02:07.5093906+01:00</SourceTime>
+  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Inimigo/Screenshot_7.xnb</DestFile>
+  <DestTime>2021-06-12T20:18:15.2470831+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

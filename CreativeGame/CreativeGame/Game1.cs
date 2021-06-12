@@ -79,7 +79,7 @@ namespace CreativeGame
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
-            _gift = new Gift(this);
+            _gift = new Gift(this, _world);
             _life = new Life(this);
             _npc = new NPC(this);
 
@@ -114,7 +114,7 @@ namespace CreativeGame
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
-            _gift = new Gift(this);
+            _gift = new Gift(this, _world);
 
             _npc = new NPC(this);
             this.Life.lifeCount--;
@@ -128,54 +128,38 @@ namespace CreativeGame
 
         protected override void Update(GameTime gameTime)
         {
+            if(!isWin && !isLose)
+            { 
+                if (activeMenu && activeCredits == false)
+                {
+                    _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+                    _player.Update(gameTime);
+                    _coin.Update(gameTime);
+                    //_enemy2.Update(gameTime);
+                    _snowHouse.Update(gameTime);
+                    //_snowBall.Update(gameTime);
+                    if (!_gift.IsDead()) _gift.Update(gameTime);
+                    _life.Update(gameTime);
+                    if (!_npc.IsDead()) _npc.Update(gameTime);
+                    _soundBackground.Play();
 
-
-            if (!IsVictory())
-            {
-                if(!isWin && !isLose)
-                { 
-                    if (activeMenu && activeCredits == false)
-                    {
-                        _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-                        _player.Update(gameTime);
-                        _coin.Update(gameTime);
-                        _enemy2.Update(gameTime);
-                        _snowHouse.Update(gameTime);
-                        _snowBall.Update(gameTime);
-                        _gift.Update(gameTime);
-                        _life.Update(gameTime);
-                        _npc.Update(gameTime);
-                        _soundBackground.Play();
-
-                    }
-                    /*else if(activeMenu == false && activeCredits == true)
-                    {
-                    }*/
-                    else
-                    {
-                        if (_nextState != null)
-                        {
-                            _currentState = _nextState;
-                            _nextState = null;
-                        }
-                        _currentState.PostUpdate(gameTime);
-                        _currentState.Update(gameTime);
-                    }
                 }
-            }
-            else
-            {
-                isWin = true;
+                /*else if(activeMenu == false && activeCredits == true)
+                {
+                }*/
+                else
+                {
+                    if (_nextState != null)
+                    {
+                        _currentState = _nextState;
+                        _nextState = null;
+                    }
+                    _currentState.PostUpdate(gameTime);
+                    _currentState.Update(gameTime);
+                }
             }
 
             base.Update(gameTime);
-        }
-        public bool IsVictory()
-        {
-            if (this.Coin.nrMoedas == 3 && this.SnowHouse.Collided)
-                return true;
-            else
-                return false;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -209,14 +193,14 @@ namespace CreativeGame
                 GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
                 _scene.Draw(_spriteBatch, gameTime);
-                _npc.Draw(_spriteBatch, gameTime);
+                if (!_npc.IsDead()) _npc.Draw(_spriteBatch, gameTime);
                 _snowHouse.Draw(_spriteBatch, gameTime);
-                _snowBall.Draw(_spriteBatch, gameTime);
+                //_snowBall.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
                 _coin.Draw(_spriteBatch, gameTime);
-                _enemy2.Draw(_spriteBatch, gameTime);
-                _gift.Draw(_spriteBatch, gameTime);
-                _life.Draw(_spriteBatch, gameTime);
+                //_enemy2.Draw(_spriteBatch, gameTime);
+                if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
+                //_life.Draw(_spriteBatch, gameTime);
                 _spriteBatch.End();
             }
             else if (activeMenu == false && activeCredits == true)
@@ -252,7 +236,7 @@ namespace CreativeGame
                 _spriteBatch.Draw(pixel, new Rectangle(Point.Zero, windowSize.ToPoint()), new Color(Color.Silver, 0.1f));
 
                 //Desenha mensagem de derrota
-                string lose = $"You lose! You are a bot!";
+                string lose = $"Soory! Now u don't have more gifts!";
                 Vector2 winMeasures = _buttonFont.MeasureString(lose) / 2f;
                 Vector2 windowCenter = windowSize / 2f;
                 Vector2 pos = windowCenter - winMeasures;
