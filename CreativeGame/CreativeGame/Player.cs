@@ -105,6 +105,11 @@ namespace CreativeGame
             base.Update(gameTime);
             Camera.LookAt(_position);
 
+            if(_position.Y < -5f)
+            {
+                _game.restart();
+            }
+
             _objects.AddRange(_objects.Where(obj => obj is Bullet).Cast<Bullet>().Where(b => b.Collided).Select(b => new Explosion(_game, b.ImpactPos)).ToArray());
             _objects = _objects.Where(b => !b.IsDead()).ToList();
         }

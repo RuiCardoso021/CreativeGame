@@ -13,7 +13,7 @@ namespace CreativeGame
 
         public bool IsDead() => _currentTexture == 0 && rotating;
 
-        public Enemy2(Game game/*, Vector2 position*/) : base("enemy", /*position*/new Vector2(1f, 3f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
+        public Enemy2(Game game/*, Vector2 position*/) : base("enemy2", /*position*/new Vector2(1f, 3f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
         {
             _fps = 20;
         }

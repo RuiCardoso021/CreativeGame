@@ -27,6 +27,7 @@ namespace CreativeGame
         private float _volume = 0.1f;
         private State _currentState;
         private State _nextState;
+        public bool isWin = false, isLose = false;
 
         public SoundEffect _soundJ, _soundT;
         public SoundEffectInstance _soundJump;
@@ -102,50 +103,76 @@ namespace CreativeGame
             _buttonFont = Content.Load<SpriteFont>("Fonts/File");
         }
 
+        public void restart()
+        {
+            foreach (Body b in _world.BodyList)
+                _world.RemoveBody(b);
+
+            _scene = new Scene(this, "MainScene");
+            _player = new Player(this);
+            _coin = new Coin(this);
+            _enemy2 = new Enemy2(this);
+            _snowHouse = new SnowHouse(this);
+            _snowBall = new SnowBall(this);
+            _gift = new Gift(this);
+            _life = new Life(this);
+            _npc = new NPC(this);
+            this.Life.lifeCount--;
+
+            //verifica se jogador perdeu todas vidas
+            if (this.Life.lifeCount == 0)
+            {
+                isLose = true;
+            }
+        }
+
         protected override void Update(GameTime gameTime)
         {
+
+
             if (!IsVictory())
             {
-                if (activeMenu && activeCredits == false)
-                {
-                    _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-                    _player.Update(gameTime);
-                    _coin.Update(gameTime);
-                    _enemy2.Update(gameTime);
-                    _snowHouse.Update(gameTime);
-                    _snowBall.Update(gameTime);
-                    _gift.Update(gameTime);
-                    _life.Update(gameTime);
-                    _npc.Update(gameTime);
-                    _soundBackground.Play();
-
-                }
-                /*else if(activeMenu == false && activeCredits == true)
-                {
-                
-             
-                }*/
-                else
-                {
-                    if (_nextState != null)
+                if(!isWin && !isLose)
+                { 
+                    if (activeMenu && activeCredits == false)
                     {
-                        _currentState = _nextState;
-                        _nextState = null;
+                        _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+                        _player.Update(gameTime);
+                        _coin.Update(gameTime);
+                        _enemy2.Update(gameTime);
+                        _snowHouse.Update(gameTime);
+                        _snowBall.Update(gameTime);
+                        _gift.Update(gameTime);
+                        _life.Update(gameTime);
+                        _npc.Update(gameTime);
+                        _soundBackground.Play();
+
                     }
-                    _currentState.PostUpdate(gameTime);
-                    _currentState.Update(gameTime);
+                    /*else if(activeMenu == false && activeCredits == true)
+                    {
+                    }*/
+                    else
+                    {
+                        if (_nextState != null)
+                        {
+                            _currentState = _nextState;
+                            _nextState = null;
+                        }
+                        _currentState.PostUpdate(gameTime);
+                        _currentState.Update(gameTime);
+                    }
                 }
             }
             else
             {
-
+                isWin = true;
             }
 
             base.Update(gameTime);
         }
         public bool IsVictory()
         {
-            if (this.Coin.nrMoedas == 3 && this.Player.Position == this.SnowHouse.Position || this.SnowHouse.ImpactPos == this.Player.Position)
+            if (this.Coin.nrMoedas == 3 && this.SnowHouse.Collided)
                 return true;
             else
                 return false;
@@ -153,27 +180,28 @@ namespace CreativeGame
 
         protected override void Draw(GameTime gameTime)
         {
+            //Verifica se e vitoria
+            if (isWin)
+            {
+                _spriteBatch.Begin();
+                Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+
+                Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
+                pixel.SetData(new[] { Color.White });
+                _spriteBatch.Draw(pixel, new Rectangle(Point.Zero, windowSize.ToPoint()), new Color(Color.Gold, 0.1f));
+
+                //Desenha mensagem de vitoria
+                string win = $"You Win!!!";
+                Vector2 winMeasures = _buttonFont.MeasureString(win) / 2f;
+                Vector2 windowCenter = windowSize / 2f;
+                Vector2 pos = windowCenter - winMeasures;
+                _spriteBatch.DrawString(_buttonFont, win, pos, Color.Red);
+                _spriteBatch.End();
+            }
+
             if (Keyboard.GetState().IsKeyDown(Keys.R))
             {
-                foreach (Body b in _world.BodyList)
-                    _world.RemoveBody(b);
-
-                _scene = new Scene(this, "MainScene");
-                _player = new Player(this);
-                _coin = new Coin(this);
-                _enemy2 = new Enemy2(this);
-                _snowHouse = new SnowHouse(this);
-                _snowBall = new SnowBall(this);
-                _gift = new Gift(this);
-                _life = new Life(this);
-                _npc = new NPC(this);
-                this.Life.lifeCount--;
-
-                //verifica se jogador perdeu todas vidas
-                if (this.Life.lifeCount == 0)
-                {
-
-                }
+                restart();
             }
 
             if (activeMenu && activeCredits == false)
@@ -195,16 +223,43 @@ namespace CreativeGame
             {
                 GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
-                _spriteBatch.DrawString(_buttonFont, $"Developed by:\nPaulo Macedo 16614\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021", new Vector2(5, 25), Color.White);
+                Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight/2);
+                string credits = $"Developed by:\nPaulo Macedo 16614\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021";
+                Vector2 winMeasures = _buttonFont.MeasureString(credits) / 2f;
+                Vector2 windowCenter = windowSize / 2f;
+                Vector2 pos = windowCenter - winMeasures;
+                _spriteBatch.DrawString(_buttonFont, credits, pos, Color.White);
                 MenuState._components["back"].Draw(gameTime, _spriteBatch);
                 _spriteBatch.End();
             }
             else
             {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
-                _currentState.Draw(gameTime, _spriteBatch);
+                if(!isWin && !isLose)
+                {
+                    GraphicsDevice.Clear(Color.CornflowerBlue);
+                    _currentState.Draw(gameTime, _spriteBatch);
+                }
+                
             }
 
+            //Verifica se e derrota
+            if (isLose)
+            {
+                _spriteBatch.Begin();
+                Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+                Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
+                pixel.SetData(new[] { Color.White });
+                _spriteBatch.Draw(pixel, new Rectangle(Point.Zero, windowSize.ToPoint()), new Color(Color.Silver, 0.1f));
+
+                //Desenha mensagem de derrota
+                string lose = $"You lose! You are a bot!";
+                Vector2 winMeasures = _buttonFont.MeasureString(lose) / 2f;
+                Vector2 windowCenter = windowSize / 2f;
+                Vector2 pos = windowCenter - winMeasures;
+                _spriteBatch.DrawString(_buttonFont, lose, pos, Color.Red);
+
+                _spriteBatch.End();
+            }
 
             base.Draw(gameTime);
         }

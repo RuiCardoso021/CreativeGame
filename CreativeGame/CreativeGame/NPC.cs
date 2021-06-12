@@ -29,7 +29,7 @@ namespace CreativeGame
         private HashSet<Fixture> _collisions;
 
         public NPC(Game1 game) :
-            base("npc", new Vector2(5.5f, 4f), Enumerable.Range(0, 12).Select(n => game.Content.Load<Texture2D>($"Inimigo/Minotaur_03_Idle_{n:D3}")).ToArray())
+            base("enemy", new Vector2(5.5f, 4f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
         {
             _collisions = new HashSet<Fixture>();
             _idleFrames = _textures; // loaded by the base construtor

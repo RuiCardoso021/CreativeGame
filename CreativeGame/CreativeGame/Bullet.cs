@@ -20,7 +20,6 @@ namespace CreativeGame
         private Vector2 _origin; // starting Point, to compute current distance
         private Vector2 _anchor;
         private bool _collided = false;
-
         public bool Collided => _collided;
         public bool IsDead() => Collided || (_origin - _position).LengthSquared() > _maxDistance * _maxDistance;
 
@@ -67,11 +66,7 @@ namespace CreativeGame
             Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
 
-            spriteBatch.Draw(_texture,
-                Camera.Position2Pixels(_position), null,
-                Color.White, _rotation,
-                _anchor, scale, SpriteEffects.None,
-                0);
+            spriteBatch.Draw(_texture,Camera.Position2Pixels(_position), null,Color.White, _rotation,_anchor, scale, SpriteEffects.None,0);
 
             base.Draw(spriteBatch, gameTime);
         }
