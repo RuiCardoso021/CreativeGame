@@ -59,9 +59,9 @@ namespace CreativeGame
                 {
                     if(_game.Coin.nrCoins == 1)
                     {
-                        _game.level = 1;
+                        _game.level++;
+                        _game.SaveGame();
                         _game.restart();
-                        
                     }
                 }
                 else if (b.GameObject().Name != "bullet")

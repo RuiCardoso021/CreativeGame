@@ -33,8 +33,9 @@
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Stone.png</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree1.png</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Background/BG.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Background/BG1.png</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
-    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/BG.png</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/catchCoin.wav</File>
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/catchG.wav</File>
@@ -158,6 +159,7 @@
     <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

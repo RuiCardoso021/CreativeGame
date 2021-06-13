@@ -739,4 +739,5 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.dll
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.pdb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.genruntimeconfig.cache
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\BG.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
