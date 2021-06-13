@@ -121,7 +121,7 @@ namespace CreativeGame
             _soundDying.Volume = _volume;
             _catchGift.Volume = _volume;
             _soundFinishLevel.Volume = _volume;
-            _soundGameOver.Volume = _volume;
+            _soundGameOver.Volume = _volume - 0.09f;
             _soundWinGame.Volume = _volume;
 
 
@@ -158,9 +158,7 @@ namespace CreativeGame
         }
 
         protected override void Update(GameTime gameTime)
-        {
-            if (isWin)
-                
+        {                
 
             if (Keyboard.GetState().IsKeyDown(Keys.P))
             {
