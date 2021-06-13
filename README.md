@@ -26,6 +26,8 @@ Mover para direita - D\
 Mover para baixo - S\
 Disparar - Enter\
 Dar restart - R\
+Dar mute - V\
+Pausa - P\
 
 ## Objetivos:
 
