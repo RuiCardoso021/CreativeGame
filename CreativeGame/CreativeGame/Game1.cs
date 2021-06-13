@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using CreativeGame.Classes;
 using Microsoft.Xna.Framework.Audio;
+using System.IO;
+using System;
 
 namespace CreativeGame
 {
@@ -22,8 +24,11 @@ namespace CreativeGame
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
         private int lifeCount = 3;
+        private string[] levelNames = new[] { "MainScene", "MainScene2"};
+        private Texture2D _background, _background2;
         private float _volume = 0.1f;
         private State _currentState, _nextState;
+        public int level = 0;
         public bool isWin = false, isLose = false, isRDown = false, isPause = false, isPDown = false, isVDown = false, isSoundActive = true;
 
         public SoundEffect _soundJ, _soundT, _soundB, _soundCoin, _soundWin, _soundGift, _soundDie, _soundGO, _soundWG;
@@ -96,6 +101,8 @@ namespace CreativeGame
             _soundWin = Content.Load<SoundEffect>("clap");
             _soundGO = Content.Load<SoundEffect>("gameOver");
             _soundWG = Content.Load<SoundEffect>("triumph");
+            _background = this.Content.Load<Texture2D>("Background/BG");
+            _background2 = this.Content.Load<Texture2D>("Background/BG1");
 
             _soundBackground = _soundB.CreateInstance();
             _soundJump = _soundJ.CreateInstance();
@@ -114,11 +121,11 @@ namespace CreativeGame
             _soundDying.Volume = _volume;
             _catchGift.Volume = _volume;
             _soundFinishLevel.Volume = _volume;
-            _soundGameOver.Volume = _volume;
+            _soundGameOver.Volume = _volume - 0.09f;
             _soundWinGame.Volume = _volume;
 
 
-            _scene = new Scene(this, "MainScene");
+            _scene = new Scene(this, levelNames[level]);
             _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
             _buttonFont = Content.Load<SpriteFont>("Fonts/File");
         }
@@ -128,7 +135,7 @@ namespace CreativeGame
             foreach (Body b in _world.BodyList)
                 _world.RemoveBody(b);
 
-            _scene = new Scene(this, "MainScene");
+            _scene = new Scene(this, levelNames[level]);
             _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
@@ -151,7 +158,8 @@ namespace CreativeGame
         }
 
         protected override void Update(GameTime gameTime)
-        {
+        {                
+
             if (Keyboard.GetState().IsKeyDown(Keys.P))
             {
                 if (!isPDown)
@@ -228,12 +236,27 @@ namespace CreativeGame
             base.Update(gameTime);
         }
 
+        public void SaveGame()
+        {
+            if (File.Exists("DataGame.txt"))
+            {
+                File.Delete("DataGame.txt");
+                using (StreamWriter writer = new StreamWriter("DataGame.txt"))
+                {
+                    writer.Write($"{level}");
+                }
+            }
+        }
+
         protected override void Draw(GameTime gameTime)
         {
+            _spriteBatch.Begin();
+            Rectangle background = new Rectangle(new Point(0, 0), new Point(1024, 768));
+            _spriteBatch.Draw(_background, background, null, Color.White);
+
             //Verifica se e vitoria
             if (isWin)
             {
-                _spriteBatch.Begin();
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
 
                 Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
@@ -246,7 +269,6 @@ namespace CreativeGame
                 Vector2 windowCenter = windowSize / 2f;
                 Vector2 pos = windowCenter - winMeasures;
                 _spriteBatch.DrawString(_buttonFont, win, pos, Color.Red);
-                _spriteBatch.End();
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.R))
@@ -298,8 +320,6 @@ namespace CreativeGame
             }
             else if (activeMenu == false && activeCredits == true)
             {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
-                _spriteBatch.Begin();
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight/2);
                 string credits = $"Developed by:\nPaulo Macedo 16544\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021";
                 Vector2 winMeasures = _buttonFont.MeasureString(credits) / 2f;
@@ -307,13 +327,13 @@ namespace CreativeGame
                 Vector2 pos = windowCenter - winMeasures;
                 _spriteBatch.DrawString(_buttonFont, credits, pos, Color.White);
                 MenuState._components["back"].Draw(gameTime, _spriteBatch);
-                _spriteBatch.End();
             }
             else
             {
                 if(!isWin && !isLose)
                 {
-                    GraphicsDevice.Clear(Color.CornflowerBlue);
+                    Rectangle background2 = new Rectangle(new Point(0, 0), new Point(1024, 768));
+                    _spriteBatch.Draw(_background2, background, null, Color.White);
                     _currentState.Draw(gameTime, _spriteBatch);
                 }
                 
@@ -322,7 +342,6 @@ namespace CreativeGame
             //Verifica se e derrota
             if (isLose)
             {
-                _spriteBatch.Begin();
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
                 Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
                 pixel.SetData(new[] { Color.White });
@@ -334,10 +353,9 @@ namespace CreativeGame
                 Vector2 windowCenter = windowSize / 2f;
                 Vector2 pos = windowCenter - winMeasures;
                 _spriteBatch.DrawString(_buttonFont, lose, pos, Color.Red);
-
-                _spriteBatch.End();
             }
 
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
     }

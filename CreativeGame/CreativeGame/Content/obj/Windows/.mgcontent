@@ -4,308 +4,162 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/10.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/11.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/12.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/13.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/14.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/15.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/16.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/17.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/18.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/3.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/4.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/5.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/6.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/7.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/8.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/9.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Crate.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Crystal.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/gift.9.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/IceBox.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Igloo.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Sign1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Sign2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/SnowMan.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Stone.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchCoin.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchG.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchGift.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/clap.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin3.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin4.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin5.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin6.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/dying.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_0.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_10.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_11.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_12.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_13.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_14.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_15.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_16.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_17.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_18.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_19.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_20.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_21.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_22.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_23.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_24.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_3.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_4.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_5.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_6.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_7.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_8.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_9.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/fireball.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Fonts/File.spritefont</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/gameOver.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (1).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (10).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (11).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (12).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (13).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (14).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (15).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (16).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (2).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (3).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (4).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (5).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (6).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (7).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (8).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (9).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_000.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_001.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_002.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_003.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_004.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_005.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_006.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_007.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_008.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_009.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_010.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_011.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_10.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_11.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_12.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_13.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_14.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_15.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_16.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_17.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_18.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_19.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_20.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_21.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_22.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_23.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_24.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_25.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_26.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_27.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_3.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_4.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_5.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_6.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_7.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_8.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_9.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/jump_sound.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Life/heart.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola0.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola1.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola2.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola3.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola4.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola5.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola6.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola7.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola8.png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/throwSnowballSound.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/triumph.wav</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(1).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(10).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(11).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(12).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(13).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(2).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(3).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(4).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(5).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(6).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(7).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(8).png</File>
-    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Background/BG.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Background/BG1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/10.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/11.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/12.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/13.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/14.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/15.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/16.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/17.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/18.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/7.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/8.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Crate.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Crystal.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/gift.9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/IceBox.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Igloo.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Sign1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Sign2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/SnowMan.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Stone.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/BG.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/catchCoin.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/catchG.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/catchGift.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/clap.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/dying.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_0.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_10.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_11.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_12.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_13.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_14.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_15.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_16.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_17.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_18.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_19.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_20.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_21.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_22.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_23.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_24.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_7.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_8.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/fireball.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Fonts/File.spritefont</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/gameOver.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (1).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (10).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (11).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (12).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (13).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (14).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (15).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (16).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (2).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (3).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (4).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (5).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (6).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (7).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (8).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (9).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_000.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_001.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_002.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_003.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_004.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_005.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_006.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_007.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_008.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_009.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_010.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Minotaur_03_Idle_011.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_10.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_11.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_12.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_13.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_14.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_15.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_16.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_17.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_18.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_19.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_20.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_21.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_22.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_23.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_24.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_25.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_26.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_27.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_7.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_8.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Inimigo/Screenshot_9.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/jump_sound.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Life/heart.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola0.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola1.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola2.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola3.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola4.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola5.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola6.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola7.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola8.png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/throwSnowballSound.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/triumph.wav</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(1).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(10).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(11).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(12).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(13).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(2).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(3).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(4).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(5).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(6).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(7).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(8).png</File>
+    <File>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

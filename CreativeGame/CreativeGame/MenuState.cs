@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,8 +82,6 @@ namespace CreativeGame.Classes
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
-
             foreach (var component in _components)
             {
                 if (component.Key == "back" && !_game.activeMenu || component.Key == "pause" && !_game.activeMenu) 
@@ -93,7 +92,6 @@ namespace CreativeGame.Classes
                 component.Value.Draw(gameTime, spriteBatch);
             }
 
-            spriteBatch.End();
         }
 
         private void NewGameButton_Click(object sender, EventArgs e)
@@ -103,7 +101,14 @@ namespace CreativeGame.Classes
 
         private void LoadGameButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Load Game");
+            string aux;
+            using (StreamReader reader = new StreamReader("DataGame.txt"))
+            {
+                aux = reader.ReadLine();
+            }
+            _game.level = int.Parse(aux);
+            _game.activeMenu = true;
+            _game.restart();
         }
         private void CreditsGameButton_Click(object sender, EventArgs e)
         {

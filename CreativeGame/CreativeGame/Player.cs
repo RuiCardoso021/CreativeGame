@@ -43,23 +43,28 @@ namespace CreativeGame
             AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2.2f/*height: _size.Y / 1.5f*/); // kinematic is false by default
 
             // Events on body
-            Body.Friction = 0f;
-            Body.OnCollision = (a, b, contact) =>
-            {
-                if (b.GameObject().Name == "enemy")
-                {
-                    System.Diagnostics.Debug.WriteLine("player perde 1 vida"); //se player morre 2x ao bater com os pes na cabeça do inimigo
-                                                                                // buga e player nao pode jogar na 3ª vida, faz GameOver
-                    _game.restart();
-                }
-            };
 
-            Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
+
+            Fixture sensor = FixtureFactory.AttachRectangle(2.3f / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
 
             sensor.OnCollision = (a, b, contact) =>
             {
-                if (b.GameObject().Name != "bullet")
+                if (b.GameObject().Name == "enemy")
+                {
+                    System.Diagnostics.Debug.WriteLine("player perde 1 vida"); //se player morre 2x ao bater com os pes na cabeça do inimigo
+                                                                               // buga e player nao pode jogar na 3ª vida, faz GameOver
+                    _game.restart();
+                }else if (b.GameObject().Name == "snowhouse")
+                {
+                    if(_game.Coin.nrCoins == 1)
+                    {
+                        _game.level++;
+                        _game.SaveGame();
+                        _game.restart();
+                    }
+                }
+                else if (b.GameObject().Name != "bullet")
                     _isGrounded = true;
 
                //if (b.GameObject().Name == "enemy") //ta a morrer qd bate com o collider dos pes no inimigo
