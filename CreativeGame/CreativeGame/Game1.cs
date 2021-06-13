@@ -23,6 +23,7 @@ namespace CreativeGame
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
         private string[] levelNames = new[] { "MainScene", "MainScene2"};
+        private Texture2D _background;
         private float _volume = 0.1f;
         private State _currentState, _nextState;
         public int level = 0;
@@ -98,6 +99,7 @@ namespace CreativeGame
             _soundWin = Content.Load<SoundEffect>("clap");
             _soundGO = Content.Load<SoundEffect>("gameOver");
             _soundWG = Content.Load<SoundEffect>("triumph");
+            _background = this.Content.Load<Texture2D>("BG");
 
             _soundBackground = _soundB.CreateInstance();
             _soundJump = _soundJ.CreateInstance();
@@ -236,6 +238,11 @@ namespace CreativeGame
 
         protected override void Draw(GameTime gameTime)
         {
+            _spriteBatch.Begin();
+            Rectangle background = new Rectangle(new Point(0, 0), new Point(1024, 768));
+            _spriteBatch.Draw(_background, background, null, Color.White);
+            _spriteBatch.End();
+
             //Verifica se e vitoria
             if (isWin)
             {
@@ -270,7 +277,6 @@ namespace CreativeGame
 
             if (activeMenu && activeCredits == false)
             {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
                 _scene.Draw(_spriteBatch, gameTime);
                 if (!_npc.IsDead()) _npc.Draw(_spriteBatch, gameTime);
@@ -286,7 +292,6 @@ namespace CreativeGame
             }
             else if (activeMenu == false && activeCredits == true)
             {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight/2);
                 string credits = $"Developed by:\nPaulo Macedo 16544\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021";
@@ -301,7 +306,6 @@ namespace CreativeGame
             {
                 if(!isWin && !isLose)
                 {
-                    GraphicsDevice.Clear(Color.CornflowerBlue);
                     _currentState.Draw(gameTime, _spriteBatch);
                 }
                 
