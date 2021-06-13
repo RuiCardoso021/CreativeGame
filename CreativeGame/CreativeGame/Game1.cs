@@ -229,7 +229,7 @@ namespace CreativeGame
                 GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight/2);
-                string credits = $"Developed by:\nPaulo Macedo 16614\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021";
+                string credits = $"Developed by:\nPaulo Macedo 16544\nBruno Carvalho 16614\nRui Cardoso 16624\nEDJD - 2020/2021";
                 Vector2 winMeasures = _buttonFont.MeasureString(credits) / 2f;
                 Vector2 windowCenter = windowSize / 2f;
                 Vector2 pos = windowCenter - winMeasures;
