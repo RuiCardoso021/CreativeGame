@@ -22,8 +22,10 @@ namespace CreativeGame
         private Life _life;
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
+        private string[] levelNames = new[] { "MainScene", "MainScene2"};
         private float _volume = 0.1f;
         private State _currentState, _nextState;
+        public int level = 0;
         public bool isWin = false, isLose = false, isRDown = false, isPause = false, isPDown = false, isVDown = false, isSoundActive = true;
 
         public SoundEffect _soundJ, _soundT, _soundB, _soundCoin, _soundWin, _soundGift, _soundDie, _soundGO, _soundWG;
@@ -118,17 +120,17 @@ namespace CreativeGame
             _soundWinGame.Volume = _volume;
 
 
-            _scene = new Scene(this, "MainScene");
+            _scene = new Scene(this, levelNames[level]);
             _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
             _buttonFont = Content.Load<SpriteFont>("Fonts/File");
         }
 
-        public void restart()
+            public void restart()
         {
             foreach (Body b in _world.BodyList)
                 _world.RemoveBody(b);
 
-            _scene = new Scene(this, "MainScene");
+            _scene = new Scene(this, levelNames[level]);
             _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
@@ -152,6 +154,9 @@ namespace CreativeGame
 
         protected override void Update(GameTime gameTime)
         {
+            if (isWin)
+                
+
             if (Keyboard.GetState().IsKeyDown(Keys.P))
             {
                 if (!isPDown)
