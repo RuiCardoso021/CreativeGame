@@ -38,7 +38,7 @@ namespace CreativeGame
             // Rotation
             _rotation = MathF.Atan2(-_directon.Y, _directon.X);
             _size = _texture.Bounds.Size.ToVector2() / 128f; // FIXME!!!!
-            Body = BodyFactory.CreateCircle(world, _size.Y / 2f, 1f, _position + (_size.X / 2f - _size.Y / 2f) * _directon, BodyType.Dynamic, this);
+            Body = BodyFactory.CreateCircle(world, _size.Y/4.5f, 1f, _position, BodyType.Dynamic, this);
             Body.LinearVelocity = _directon * _speed;
             Body.IsBullet = true;
             Body.IgnoreGravity = true;
@@ -51,7 +51,6 @@ namespace CreativeGame
                 {
                     _collided = true;
                     ImpactPos = _position + (b.GameObject().Position - _position) / 2f;
-
                 }
             };
         }

@@ -379,6 +379,24 @@
 /processorParam:TextureFormat=Color
 /build:Button/Button.png
 
+#begin catchCoin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:catchCoin.wav
+
+#begin catchGift.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:catchGift.wav
+
+#begin clap.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:clap.wav
+
 #begin Coin/coin1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -450,6 +468,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Coin/coin6.png
+
+#begin dying.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:dying.wav
 
 #begin Explosion/explosion_0.png
 /importer:TextureImporter
@@ -769,6 +793,12 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:Fonts/File.spritefont
+
+#begin gameOver.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:gameOver.wav
 
 #begin Idle (1).png
 /importer:TextureImporter
@@ -1561,6 +1591,12 @@
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:throwSnowballSound.wav
+
+#begin triumph.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:triumph.wav
 
 #begin Walk(1).png
 /importer:TextureImporter

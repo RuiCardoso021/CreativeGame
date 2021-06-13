@@ -15,6 +15,7 @@ namespace CreativeGame
 
         private Game1 _game;
         private bool _collided = false;
+        public int nrGifts = 0;
 
         public bool Catched => _collided;
         public bool IsDead() => Catched;
@@ -23,7 +24,7 @@ namespace CreativeGame
         {
             _fps = 20;
 
-            _game = (Game1)game;
+            _game = (Game1) game;
 
             Body = BodyFactory.CreateCircle(world, .25f, 1f, _position, BodyType.Static, this);
             Body.IsSensor = true;
@@ -32,11 +33,12 @@ namespace CreativeGame
             {
                 if (!_collided && collider.GameObject().Name == "player")
                 {
-                    System.Diagnostics.Debug.WriteLine("Toquei na gift.");
                     _collided = true;
+                    world.RemoveBody(Body);
+                    nrGifts++;
+                    _game._catchGift.Play();
                 }
             };
-
         }
 
         public override void Update(GameTime gameTime)

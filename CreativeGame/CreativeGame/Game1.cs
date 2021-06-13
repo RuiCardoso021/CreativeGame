@@ -22,16 +22,12 @@ namespace CreativeGame
         private Life _life;
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
-        private SoundEffect _soundB;
-        private SoundEffectInstance _soundBackground;
         private float _volume = 0.1f;
-        private State _currentState;
-        private State _nextState;
+        private State _currentState, _nextState;
         public bool isWin = false, isLose = false;
 
-        public SoundEffect _soundJ, _soundT;
-        public SoundEffectInstance _soundJump;
-        public SoundEffectInstance _soundThrowSnowball;
+        public SoundEffect _soundJ, _soundT, _soundB, _soundCoin, _soundWin, _soundGift, _soundDie, _soundGO, _soundWG;
+        public SoundEffectInstance _soundBackground, _soundJump, _soundThrowSnowball, _catchCoin, _catchGift, _soundFinishLevel, _soundDying, _soundGameOver, _soundWinGame;
         public bool activeMenu = false, activeCredits = false, activeBackButton = false;
         private SpriteFont _buttonFont;
         Rectangle screenRectangle;
@@ -75,13 +71,13 @@ namespace CreativeGame
             Camera.LookAt(Camera.WorldSize / 2f);
 
             _player = new Player(this);
-            _coin = new Coin(this, _world);
+            _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
+            _coin = new Coin(this, _world);
             _gift = new Gift(this, _world);
             _life = new Life(this);
-            _npc = new NPC(this);
 
             base.Initialize();
         }
@@ -89,15 +85,38 @@ namespace CreativeGame
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            
             _soundB = Content.Load<SoundEffect>("background_sound");
-            _soundBackground = _soundB.CreateInstance();
-            _soundBackground.Volume = _volume - 0.05f;
             _soundJ = Content.Load<SoundEffect>("jump_sound");
             _soundT = Content.Load<SoundEffect>("throwSnowballSound");
+            _soundCoin = Content.Load<SoundEffect>("catchCoin");
+            _soundDie = Content.Load<SoundEffect>("dying");
+            _soundGift = Content.Load<SoundEffect>("catchGift");
+            _soundWin = Content.Load<SoundEffect>("clap");
+            _soundGO = Content.Load<SoundEffect>("gameOver");
+            _soundWG = Content.Load<SoundEffect>("triumph");
+
+            _soundBackground = _soundB.CreateInstance();
             _soundJump = _soundJ.CreateInstance();
-            _soundJump.Volume = _volume;
             _soundThrowSnowball = _soundT.CreateInstance();
+            _catchCoin = _soundCoin.CreateInstance();
+            _soundDying = _soundDie.CreateInstance();
+            _catchGift = _soundGift.CreateInstance();
+            _soundFinishLevel = _soundWin.CreateInstance();
+            _soundGameOver = _soundGO.CreateInstance();
+            _soundWinGame = _soundWG.CreateInstance();
+
+            _soundBackground.Volume = _volume - 0.05f;
+            _soundJump.Volume = _volume;
             _soundThrowSnowball.Volume = _volume;
+            _catchCoin.Volume = _volume;
+            _soundDying.Volume = _volume;
+            _catchGift.Volume = _volume;
+            _soundFinishLevel.Volume = _volume;
+            _soundGameOver.Volume = _volume;
+            _soundWinGame.Volume = _volume;
+
+
             _scene = new Scene(this, "MainScene");
             _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
             _buttonFont = Content.Load<SpriteFont>("Fonts/File");
@@ -110,19 +129,21 @@ namespace CreativeGame
 
             _scene = new Scene(this, "MainScene");
             _player = new Player(this);
-            _coin = new Coin(this, _world);
+            _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
             _snowBall = new SnowBall(this);
+            _coin = new Coin(this, _world);
             _gift = new Gift(this, _world);
 
-            _npc = new NPC(this);
+            _soundDying.Play();
             this.Life.lifeCount--;
 
             //verifica se jogador perdeu todas vidas
             if (this.Life.lifeCount == 0)
             {
                 isLose = true;
+                _soundGO.Play();
             }
         }
 
@@ -134,13 +155,13 @@ namespace CreativeGame
                 {
                     _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
                     _player.Update(gameTime);
-                    if (!_coin.IsDead()) _coin.Update(gameTime);
+                    if (!_npc.IsDead()) _npc.Update(gameTime);
                     //_enemy2.Update(gameTime);
                     _snowHouse.Update(gameTime);
                     //_snowBall.Update(gameTime);
+                    if (!_coin.IsDead()) _coin.Update(gameTime);
                     if (!_gift.IsDead()) _gift.Update(gameTime);
                     _life.Update(gameTime);
-                    if (!_npc.IsDead()) _npc.Update(gameTime);
                     _soundBackground.Play();
 
                 }
@@ -197,8 +218,8 @@ namespace CreativeGame
                 _snowHouse.Draw(_spriteBatch, gameTime);
                 //_snowBall.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
-                if (!_coin.IsDead()) _coin.Draw(_spriteBatch, gameTime);
                 //_enemy2.Draw(_spriteBatch, gameTime);
+                if (!_coin.IsDead()) _coin.Draw(_spriteBatch, gameTime);
                 if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
                 //_life.Draw(_spriteBatch, gameTime);
                 _spriteBatch.End();

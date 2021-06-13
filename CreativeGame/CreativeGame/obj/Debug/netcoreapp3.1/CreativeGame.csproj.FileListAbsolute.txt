@@ -681,3 +681,9 @@ D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGam
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola7.xnb
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola8.xnb
 D:\Engenharia de Jogos\TecnicasDesenvJogos\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\throwSnowballSound.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchCoin.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchGift.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\clap.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\dying.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\gameOver.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\triumph.xnb

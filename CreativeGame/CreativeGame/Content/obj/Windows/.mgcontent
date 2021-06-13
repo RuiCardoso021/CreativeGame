@@ -35,12 +35,16 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/assets/orig/images/Tree2.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchCoin.wav</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchGift.wav</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/clap.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin1.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin2.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin3.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin4.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin5.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin6.png</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/dying.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_0.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_1.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_10.png</File>
@@ -68,6 +72,7 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_9.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/fireball.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Fonts/File.spritefont</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/gameOver.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (1).png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (10).png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (11).png</File>
@@ -135,6 +140,7 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola7.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/SnowBall/bola8.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/throwSnowballSound.wav</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/triumph.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(1).png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(10).png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(11).png</File>
@@ -150,6 +156,12 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

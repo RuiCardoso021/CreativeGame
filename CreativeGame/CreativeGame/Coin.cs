@@ -12,19 +12,17 @@ namespace CreativeGame
 {
     public class Coin : AnimatedSprite, ITempObject
     {
-        
-        public int nrMoedas = 0;
-        private bool _collided = false;
         private Game1 _game;
+        private bool _collided = false;
+        private int nrCoins = 0;
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
-
-        public Coin(Game game, World world) : base("coin", /*position*/new Vector2(5f, 1f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
+        public Coin(Game game, World world) : base("coin", /*position*/new Vector2(8f, 1f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
         {
             _fps = 20;
 
-            _game = (Game1)game;
+            _game = (Game1) game;
 
             Body = BodyFactory.CreateCircle(world, .25f, 1f, _position, BodyType.Static, this);
             Body.IsSensor = true;
@@ -33,15 +31,16 @@ namespace CreativeGame
             {
                 if (!_collided && collider.GameObject().Name == "player")
                 {
-                    System.Diagnostics.Debug.WriteLine("Toquei na moeda.");
                     _collided = true;
+                    world.RemoveBody(Body);
+                    nrCoins++;
+                    _game._catchCoin.Play();
                 }
             };
         }
 
         public override void Update(GameTime gameTime)
         {
-    
             base.Update(gameTime);
         }
 

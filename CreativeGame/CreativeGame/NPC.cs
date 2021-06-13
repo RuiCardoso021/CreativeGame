@@ -19,6 +19,7 @@ namespace CreativeGame
         private Status _status = Status.Patroling;
 
         private Game1 _game;
+        private bool _onGround;
 
         public bool IsDead() => _status == Status.Die;
 
@@ -26,14 +27,8 @@ namespace CreativeGame
         private List<Texture2D> _walkFrames;
         private Vector2 _startingPoint;
 
-        private int _ccount = 0;
-
-        private HashSet<Fixture> _collisions;
-
-        public NPC(Game1 game) :
-            base("enemy", new Vector2(5.5f, 4f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
+        public NPC(Game1 game, World world) : base("enemy", new Vector2(5.5f, 4f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
         {
-            _collisions = new HashSet<Fixture>();
             _idleFrames = _textures; // loaded by the base construtor
             _direction = Direction.Left;
 
@@ -47,46 +42,50 @@ namespace CreativeGame
 
             AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2f); // kinematic is false by default
 
+            // Events on body
+            Body.Friction = 0f;
+            Body.OnCollision = (a, b, contact) =>
+            {
+                if (_status == Status.Die) return;
+
+                if (b.GameObject().Name == "bullet")
+                {
+                    System.Diagnostics.Debug.WriteLine("NPC foi atingido.");
+                    _status = Status.Die;
+                    world.RemoveBody(Body);
+                }
+            };
+
+            // Events on foot
             Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
             sensor.OnCollision = (a, b, contact) =>
             {
                 if (_status == Status.Die) return;
 
-                _collisions.Add(b);  // FIXME FOR BULLETS
-                if (_status == Status.Flying && b.GameObject().Name != "bullet")
+                _onGround = b.GameObject().Name.StartsWith("assets/orig/images/");
+
+                if (_status == Status.Flying)
                 {
                     _status = Status.Patroling;
                     _startingPoint = _position;
                 }
             };
+
             sensor.OnSeparation = (a, b, contact) =>
             {
                 if (_status == Status.Die) return;
 
-                _collisions.Remove(b);
-            };
-
-            Body.Friction = 0f;
-            Body.IsSensor = false;
-            Body.OnCollision = (a, b, contact) =>
-            {
-                if (_status != Status.Die && b.GameObject().Name == "bullet")
-                {
-                    System.Diagnostics.Debug.WriteLine("NPC foi atingido.");
-                    _status = Status.Die;
-                }
+                _onGround = b.GameObject().Name.StartsWith("assets/orig/images/");
             };
         }
 
 
         public override void Update(GameTime gameTime)
         {
-            System.Diagnostics.Debug.WriteLine($"X: {_position.X} | Y: {_position.Y}.");
-
             if (_status == Status.Die) return;
 
-            if (_status != Status.Flying && _collisions.Count == 0)
+            if (_status != Status.Flying && !_onGround)
             {
                 Body.LinearVelocity = Vector2.Zero;
                 _status = Status.Flying;
@@ -113,9 +112,10 @@ namespace CreativeGame
             }
 
             // Patrolling
-            float _patrolDistance = 2f;
             if (_status == Status.Patroling)
             {
+                float _patrolDistance = 2f;
+
                 if ((_position - _game.Player.Position).Length() < 1.5f)
                 {
                     _status = Status.Chasing;
@@ -135,6 +135,7 @@ namespace CreativeGame
                         Body.LinearVelocity = Vector2.UnitX;  //<<
                 }
             }
+
             base.Update(gameTime);
         }
     }

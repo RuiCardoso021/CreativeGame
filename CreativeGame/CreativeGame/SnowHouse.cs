@@ -53,6 +53,7 @@ namespace CreativeGame
             {
                 _collisions.Add(b);  // FIXME FOR BULLETS
                 //_game.isWin = true;
+                //_game._soundFinishLevel.Play();
             };
             sensor.OnSeparation = (a, b, contact) =>
             {
