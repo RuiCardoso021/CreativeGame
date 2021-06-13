@@ -11,7 +11,7 @@ namespace CreativeGame
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
+        public Texture2D lifeImg;
         private Scene _scene;
         private Player _player;
         public NPC _npc;
@@ -19,9 +19,9 @@ namespace CreativeGame
         private Coin _coin;
         private Enemy2 _enemy2;
         private Gift _gift;
-        private Life _life;
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
+        private int lifeCount = 3;
         private float _volume = 0.1f;
         private State _currentState, _nextState;
         public bool isWin = false, isLose = false, isRDown = false, isPause = false, isPDown = false, isVDown = false, isSoundActive = true;
@@ -36,7 +36,6 @@ namespace CreativeGame
         public Coin Coin => _coin;
         public Enemy2 Enemy2 => _enemy2;
         public Gift Gift => _gift;
-        public Life Life => _life;
         public SnowHouse SnowHouse => _snowHouse;
         public SnowBall SnowBall => _snowBall;
 
@@ -74,11 +73,10 @@ namespace CreativeGame
             _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
-            _snowHouse = new SnowHouse(this);
+            _snowHouse = new SnowHouse(this, _world);
             _snowBall = new SnowBall(this);
             _coin = new Coin(this, _world);
             _gift = new Gift(this, _world);
-            _life = new Life(this);
 
             base.Initialize();
         }
@@ -86,7 +84,9 @@ namespace CreativeGame
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            
+
+            lifeImg = Content.Load<Texture2D>($"Life/heart");
+
             _soundB = Content.Load<SoundEffect>("background_sound");
             _soundJ = Content.Load<SoundEffect>("jump_sound");
             _soundT = Content.Load<SoundEffect>("throwSnowballSound");
@@ -132,17 +132,17 @@ namespace CreativeGame
             _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
-            _snowHouse = new SnowHouse(this);
+            _snowHouse = new SnowHouse(this, _world);
             _snowBall = new SnowBall(this);
             _coin = new Coin(this, _world);
             _gift = new Gift(this, _world);
 
             if (!isSoundActive) 
                 _soundDying.Play();
-            this.Life.lifeCount--;
+            lifeCount--;
 
             //verifica se jogador perdeu todas vidas
-            if (this.Life.lifeCount == 0)
+            if (lifeCount == 0)
             {
                 isLose = true;
                 if (!isSoundActive)
@@ -188,7 +188,6 @@ namespace CreativeGame
                         //_snowBall.Update(gameTime);
                         if (!_coin.IsDead()) _coin.Update(gameTime);
                         if (!_gift.IsDead()) _gift.Update(gameTime);
-                        _life.Update(gameTime);
 
                         if (Keyboard.GetState().IsKeyUp(Keys.V))
                         {
@@ -256,8 +255,7 @@ namespace CreativeGame
                 {
                     restart();
                     isRDown = true;
-                }
-                
+                } 
             }
             else
                 isRDown = false;
@@ -267,6 +265,26 @@ namespace CreativeGame
             {
                 GraphicsDevice.Clear(Color.CornflowerBlue);
                 _spriteBatch.Begin();
+
+                if(lifeCount == 3)
+                {
+                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
+                    _spriteBatch.Draw(lifeImg, new Vector2(50f, 0f), Color.White);
+                    _spriteBatch.Draw(lifeImg, new Vector2(100f, 0f), Color.White);
+                }
+                else if (lifeCount == 2)
+                {
+                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
+                    _spriteBatch.Draw(lifeImg, new Vector2(50f, 0f), Color.White);
+                }
+                else if (lifeCount == 1)
+                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
+                /*Life.lifeImg.Draw(_spriteBatch, gameTime);
+                string lives = $"Lives: {Life.lifeCount}";
+                Point measure = _buttonFont.MeasureString(lives).ToPoint();
+                int posX = 100 - measure.X - 5;
+                _spriteBatch.DrawString(_buttonFont, lives, new Vector2(posX, 100 + 30), Color.White);*/
+
                 _scene.Draw(_spriteBatch, gameTime);
                 if (!_npc.IsDead()) _npc.Draw(_spriteBatch, gameTime);
                 _snowHouse.Draw(_spriteBatch, gameTime);
@@ -275,7 +293,6 @@ namespace CreativeGame
                 //_enemy2.Draw(_spriteBatch, gameTime);
                 if (!_coin.IsDead()) _coin.Draw(_spriteBatch, gameTime);
                 if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
-                //_life.Draw(_spriteBatch, gameTime);
                 _spriteBatch.End();
                 
             }

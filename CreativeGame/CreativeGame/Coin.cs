@@ -18,11 +18,11 @@ namespace CreativeGame
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
-        public Coin(Game game, World world) : base("coin", /*position*/new Vector2(8f, 1f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
+        public Coin(Game game, World world) : base("coin", new Vector2(8f, 1f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
         {
             _fps = 20;
 
-            _game = (Game1) game;
+            _game = (Game1)game;
 
             Body = BodyFactory.CreateCircle(world, .25f, 1f, _position, BodyType.Static, this);
             Body.IsSensor = true;
@@ -34,7 +34,7 @@ namespace CreativeGame
                     _collided = true;
                     world.RemoveBody(Body);
                     nrCoins++;
-                    if(!_game.isSoundActive) 
+                    if (!_game.isSoundActive)
                         _game._catchCoin.Play();
                 }
             };

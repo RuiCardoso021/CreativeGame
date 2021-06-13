@@ -24,21 +24,25 @@ namespace CreativeGame
         public bool Collided => _collided;
         public bool IsDead() => _currentTexture == 0 && rotating;
 
-        public SnowHouse(Game game/*, Vector2 position*/) : base("snowhouse", /*position*/new Vector2(45f, 2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/Igloo")).ToArray())
+        public SnowHouse(Game game, World world) : base("snowhouse", new Vector2(45f, 2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/Igloo")).ToArray())
         {
             _fps = 20;
 
-            /*Body = BodyFactory.CreateCircle(_world, _size.Y / 2f, 1f, _position + (_size.X / 2f - _size.Y / 2f) * _directon, BodyType.Dynamic, this);
-            Body.OnCollision = (a, b, contact) =>
+            Body = BodyFactory.CreateCircle(world, 5f, 1f, _position, BodyType.Static, this);
+            Body.IsSensor = true;
+            Body.OnCollision = (thisSnowHouse, collider, contact) =>
             {
-                string[] ignore = { "bullet", "explosion" };
-                if (!ignore.Contains(b.GameObject().Name))
+                if (!_collided && collider.GameObject().Name == "player")
                 {
                     _collided = true;
-                    ImpactPos = _position + (b.GameObject().Position - _position) / 2f;
-
+                    if(_collided && _game.Coin.nrCoins == 3)
+                    {
+                        _game.isWin = true;
+                        _game._soundFinishLevel.Play();
+                    }
+                    
                 }
-            };*/
+            };
 
             _collisions = new HashSet<Fixture>();
 
