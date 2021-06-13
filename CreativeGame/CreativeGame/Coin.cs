@@ -14,7 +14,7 @@ namespace CreativeGame
     {
         private Game1 _game;
         private bool _collided = false;
-        private int nrCoins = 0;
+        public int nrCoins = 0;
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
@@ -34,7 +34,8 @@ namespace CreativeGame
                     _collided = true;
                     world.RemoveBody(Body);
                     nrCoins++;
-                    _game._catchCoin.Play();
+                    if(!_game.isSoundActive) 
+                        _game._catchCoin.Play();
                 }
             };
         }

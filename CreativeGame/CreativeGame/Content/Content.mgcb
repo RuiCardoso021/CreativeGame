@@ -385,6 +385,12 @@
 /processorParam:Quality=Best
 /build:catchCoin.wav
 
+#begin catchG.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:catchG.wav
+
 #begin catchGift.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor

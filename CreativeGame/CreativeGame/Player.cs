@@ -29,7 +29,7 @@ namespace CreativeGame
         private List<Texture2D> _idleFrames;
         private List<Texture2D> _walkFrames;
 
-        public Player(Game1 game) : base("player", new Vector2(0f, 4f), Enumerable.Range(1, 16).Select(n => game.Content.Load<Texture2D>($"Idle ({n})")).ToArray())
+        public Player(Game1 game, World world) : base("player", new Vector2(0f, 4f), Enumerable.Range(1, 16).Select(n => game.Content.Load<Texture2D>($"Idle ({n})")).ToArray())
         {
             _idleFrames = _textures; // loaded by the base construtor
 
@@ -42,6 +42,18 @@ namespace CreativeGame
 
             AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2.2f/*height: _size.Y / 1.5f*/); // kinematic is false by default
 
+            // Events on body
+            Body.Friction = 0f;
+            Body.OnCollision = (a, b, contact) =>
+            {
+                if (b.GameObject().Name == "enemy")
+                {
+                    System.Diagnostics.Debug.WriteLine("player perde 1 vida"); //se player morre 2x ao bater com os pes na cabeça do inimigo
+                                                                                // buga e player nao pode jogar na 3ª vida, faz GameOver
+                    _game.restart();
+                }
+            };
+
             Fixture sensor = FixtureFactory.AttachRectangle(_size.X / 3f, _size.Y * 0.05f, 4, new Vector2(0, -_size.Y / 2f), Body);
             sensor.IsSensor = true;
 
@@ -49,6 +61,13 @@ namespace CreativeGame
             {
                 if (b.GameObject().Name != "bullet")
                     _isGrounded = true;
+
+               //if (b.GameObject().Name == "enemy") //ta a morrer qd bate com o collider dos pes no inimigo
+               //{
+               //    System.Diagnostics.Debug.WriteLine("player perde 1 vida");
+               //    //world.RemoveBody(Body);
+               //    _game.restart();
+                //}
             };
             sensor.OnSeparation = (a, b, contact) => _isGrounded = false;
 
@@ -56,7 +75,8 @@ namespace CreativeGame
             {
                 if (_isGrounded)
                     Body.ApplyForce(new Vector2(0, 300f));
-                _game._soundJump.Play();
+                if (!_game.isSoundActive) 
+                    _game._soundJump.Play();
 
             });
             KeyboardManager.Register(Keys.A, KeysState.Down, () =>
@@ -79,7 +99,8 @@ namespace CreativeGame
                 {
                     Bullet bullet = new Bullet(_snowBall, _position, dir, game.Services.GetService<World>());
                     _objects.Add(bullet);
-                    _game._soundThrowSnowball.Play();
+                    if (!_game.isSoundActive) 
+                        _game._soundThrowSnowball.Play();
                 }
             });
         }

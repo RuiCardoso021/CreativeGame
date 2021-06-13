@@ -36,6 +36,7 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Button/Button.png</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchCoin.wav</File>
+    <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchG.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/catchGift.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/clap.wav</File>
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Coin/coin1.png</File>
@@ -156,6 +157,7 @@
     <File>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Walk(9).png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

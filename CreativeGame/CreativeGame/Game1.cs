@@ -24,7 +24,7 @@ namespace CreativeGame
         private SnowBall _snowBall;
         private float _volume = 0.1f;
         private State _currentState, _nextState;
-        public bool isWin = false, isLose = false;
+        public bool isWin = false, isLose = false, isRDown = false, isPause = false, isPDown = false, isVDown = false, isSoundActive = true;
 
         public SoundEffect _soundJ, _soundT, _soundB, _soundCoin, _soundWin, _soundGift, _soundDie, _soundGO, _soundWG;
         public SoundEffectInstance _soundBackground, _soundJump, _soundThrowSnowball, _catchCoin, _catchGift, _soundFinishLevel, _soundDying, _soundGameOver, _soundWinGame;
@@ -51,6 +51,7 @@ namespace CreativeGame
             Services.AddService(_world);
 
             new KeyboardManager(this);
+            
         }
 
         protected override void Initialize()
@@ -70,7 +71,7 @@ namespace CreativeGame
             new Camera(GraphicsDevice, height: 10f);
             Camera.LookAt(Camera.WorldSize / 2f);
 
-            _player = new Player(this);
+            _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
@@ -91,7 +92,7 @@ namespace CreativeGame
             _soundT = Content.Load<SoundEffect>("throwSnowballSound");
             _soundCoin = Content.Load<SoundEffect>("catchCoin");
             _soundDie = Content.Load<SoundEffect>("dying");
-            _soundGift = Content.Load<SoundEffect>("catchGift");
+            _soundGift = Content.Load<SoundEffect>("catchG");
             _soundWin = Content.Load<SoundEffect>("clap");
             _soundGO = Content.Load<SoundEffect>("gameOver");
             _soundWG = Content.Load<SoundEffect>("triumph");
@@ -128,7 +129,7 @@ namespace CreativeGame
                 _world.RemoveBody(b);
 
             _scene = new Scene(this, "MainScene");
-            _player = new Player(this);
+            _player = new Player(this, _world);
             _npc = new NPC(this, _world);
             _enemy2 = new Enemy2(this);
             _snowHouse = new SnowHouse(this);
@@ -136,47 +137,92 @@ namespace CreativeGame
             _coin = new Coin(this, _world);
             _gift = new Gift(this, _world);
 
-            _soundDying.Play();
+            if (!isSoundActive) 
+                _soundDying.Play();
             this.Life.lifeCount--;
 
             //verifica se jogador perdeu todas vidas
             if (this.Life.lifeCount == 0)
             {
                 isLose = true;
-                _soundGO.Play();
+                if (!isSoundActive)
+                    _soundGO.Play();
             }
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if(!isWin && !isLose)
-            { 
-                if (activeMenu && activeCredits == false)
+            if (Keyboard.GetState().IsKeyDown(Keys.P))
+            {
+                if (!isPDown)
                 {
-                    _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-                    _player.Update(gameTime);
-                    if (!_npc.IsDead()) _npc.Update(gameTime);
-                    //_enemy2.Update(gameTime);
-                    _snowHouse.Update(gameTime);
-                    //_snowBall.Update(gameTime);
-                    if (!_coin.IsDead()) _coin.Update(gameTime);
-                    if (!_gift.IsDead()) _gift.Update(gameTime);
-                    _life.Update(gameTime);
-                    _soundBackground.Play();
-
-                }
-                /*else if(activeMenu == false && activeCredits == true)
-                {
-                }*/
-                else
-                {
-                    if (_nextState != null)
+                    isPDown = true;
+                    if (isPause == false)
                     {
-                        _currentState = _nextState;
-                        _nextState = null;
+                        isPause = true;
+                        _soundBackground.Pause();
                     }
-                    _currentState.PostUpdate(gameTime);
-                    _currentState.Update(gameTime);
+                    else
+                    {
+                        isPause = false;
+                        _soundBackground.Play();
+                    }
+                        
+                }
+
+            }
+            else
+                isPDown = false;
+
+            if (!isPause)
+            { 
+                if(!isWin && !isLose)
+                { 
+                    if (activeMenu && activeCredits == false)
+                    {
+                        _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+                        _player.Update(gameTime);
+                        if (!_npc.IsDead()) _npc.Update(gameTime);
+                        //_enemy2.Update(gameTime);
+                        _snowHouse.Update(gameTime);
+                        //_snowBall.Update(gameTime);
+                        if (!_coin.IsDead()) _coin.Update(gameTime);
+                        if (!_gift.IsDead()) _gift.Update(gameTime);
+                        _life.Update(gameTime);
+
+                        if (Keyboard.GetState().IsKeyUp(Keys.V))
+                        {
+                            if (!isVDown)
+                            {
+                                isVDown = true;
+                                if (isSoundActive)
+                                {
+                                    _soundBackground.Play();
+                                    isSoundActive = false;
+                                }
+                                else
+                                {
+                                    _soundBackground.Pause();
+                                    isSoundActive = true;
+                                }
+                            }
+                        }
+                        else
+                            isVDown = false;
+                    }
+                    /*else if(activeMenu == false && activeCredits == true)
+                    {
+                    }*/
+                    else
+                    {
+                        if (_nextState != null)
+                        {
+                            _currentState = _nextState;
+                            _nextState = null;
+                        }
+                        _currentState.PostUpdate(gameTime);
+                        _currentState.Update(gameTime);
+                    }
                 }
             }
 
@@ -206,8 +252,16 @@ namespace CreativeGame
 
             if (Keyboard.GetState().IsKeyDown(Keys.R))
             {
-                restart();
+                if (!isRDown)
+                {
+                    restart();
+                    isRDown = true;
+                }
+                
             }
+            else
+                isRDown = false;
+
 
             if (activeMenu && activeCredits == false)
             {
@@ -223,6 +277,7 @@ namespace CreativeGame
                 if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
                 //_life.Draw(_spriteBatch, gameTime);
                 _spriteBatch.End();
+                
             }
             else if (activeMenu == false && activeCredits == true)
             {

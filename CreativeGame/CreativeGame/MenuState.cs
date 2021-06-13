@@ -13,7 +13,7 @@ namespace CreativeGame.Classes
     public class MenuState : State
     {
         public static Dictionary<String, Component> _components;
-
+        
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
@@ -85,7 +85,7 @@ namespace CreativeGame.Classes
 
             foreach (var component in _components)
             {
-                if (component.Key == "back" && !_game.activeMenu)
+                if (component.Key == "back" && !_game.activeMenu || component.Key == "pause" && !_game.activeMenu) 
                 {
                     continue;
                 }
@@ -113,6 +113,7 @@ namespace CreativeGame.Classes
         {
             Console.WriteLine("Score");
         }
+       
         public void BackGameButton_Click(object sender, EventArgs e)
         {
             _game.activeMenu = false;

@@ -20,7 +20,7 @@ namespace CreativeGame
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
-        public Gift(Game game, World world) : base("gift", new Vector2(2f,0.2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
+        public Gift(Game game, World world) : base("gift", new Vector2(2f,0.2f), Enumerable.Range(0, 1).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
         {
             _fps = 20;
 
@@ -36,7 +36,8 @@ namespace CreativeGame
                     _collided = true;
                     world.RemoveBody(Body);
                     nrGifts++;
-                    _game._catchGift.Play();
+                    if (!_game.isSoundActive)
+                        _game._catchGift.Play();
                 }
             };
         }

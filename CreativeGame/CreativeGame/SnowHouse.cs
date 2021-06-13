@@ -55,7 +55,12 @@ namespace CreativeGame
                 if (accept.Contains(b.GameObject().Name))
                 {
                     _collisions.Add(b);  // FIXME FOR BULLETS
-                    // _game.IsVictory();
+                    if(_game.Coin.nrCoins == 1)
+                    {
+                        _game.isWin = true;
+                        _game._soundFinishLevel.Play();
+                    }
+                    
                 }
             };
             sensor.OnSeparation = (a, b, contact) =>

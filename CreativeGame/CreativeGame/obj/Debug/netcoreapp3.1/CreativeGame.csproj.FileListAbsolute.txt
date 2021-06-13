@@ -687,3 +687,4 @@ C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcor
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\dying.xnb
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\gameOver.xnb
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\triumph.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchG.xnb
