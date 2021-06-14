@@ -23,9 +23,9 @@ namespace CreativeGame
         private Gift _gift;
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
-        private int lifeCount = 3, contMinLvlTime = 0;
+        private int contMinLvlTime = 0;
         private double lvlTime = 0f;
-        public int nrCoins = 0;
+        public int nrCoins = 0, lifeCount = 3;
         private string[] levelNames = new[] { "MainScene", "MainScene2"};
         private Texture2D _background, _background2;
         private float _volume = 0.1f;
@@ -335,7 +335,7 @@ namespace CreativeGame
                 if (lifeCount == 3)
                 {
                     _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), new Rectangle(0, 0, 0, 0),Color.White, 0, new Vector2(0,0), new Vector2(0, 0), 0,3);
-                    //_spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
+                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
                     _spriteBatch.Draw(lifeImg, new Vector2(50f, 0f), Color.White);
                     _spriteBatch.Draw(lifeImg, new Vector2(100f, 0f), Color.White);
                 }

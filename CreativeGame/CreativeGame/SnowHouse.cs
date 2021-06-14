@@ -35,6 +35,7 @@ namespace CreativeGame
                         {
                             _game._soundFinishLevel.Play();
                             _game.level++;
+                            _game.lifeCount = 3;
                             _game.nrCoins = 0;
                             _game.SaveGame();
                             _game.restart();
