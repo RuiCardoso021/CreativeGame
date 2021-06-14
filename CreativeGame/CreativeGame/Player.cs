@@ -50,17 +50,8 @@ namespace CreativeGame
 
             sensor.OnCollision = (a, b, contact) =>
             {
-                
                 if (b.GameObject().Name != "bullet")
                     _isGrounded = true;
-                
-
-               //if (b.GameObject().Name == "enemy") //ta a morrer qd bate com o collider dos pes no inimigo
-               //{
-               //    System.Diagnostics.Debug.WriteLine("player perde 1 vida");
-               //    //world.RemoveBody(Body);
-               //    _game.restart();
-                //}
             };
             sensor.OnSeparation = (a, b, contact) => _isGrounded = false;
 

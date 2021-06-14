@@ -508,12 +508,13 @@ C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcor
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\gameOver.xnb
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\triumph.xnb
 C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchG.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchCoin.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchGift.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\clap.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\dying.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\gameOver.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\triumph.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile000.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile001.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\10.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\11.xnb
@@ -543,15 +544,22 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Stone.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Tree1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\assets\orig\images\Tree2.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\background_sound.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Button\Button.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchCoin.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchG.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\catchGift.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\clap.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin0.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin2.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin3.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin4.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin5.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin6.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\dying.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_0.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_10.xnb
@@ -579,6 +587,7 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Explosion\explosion_9.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\fireball.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Fonts\File.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\gameOver.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (1).xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (10).xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Idle (11).xnb
@@ -656,7 +665,12 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola6.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola7.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\SnowBall\bola8.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v0.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v1.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\throwSnowballSound.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile000.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile001.xnb
+F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\triumph.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (1).xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (10).xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Walk (11).xnb
@@ -739,12 +753,3 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.dll
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.pdb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.genruntimeconfig.cache
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
-F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin0.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile000.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile001.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v0.xnb
-C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v1.xnb

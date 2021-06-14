@@ -264,19 +264,12 @@ namespace CreativeGame
 
         public void SaveGame()
         {
-
-            using (StreamWriter w = File.AppendText("DataGame.txt"))
-            {
-                w.Write($"{level}");
-            }
-            /*if (File.Exists("DataGame.txt"))
-            {
+            if (File.Exists("DataGame.txt")) 
                 File.Delete("DataGame.txt");
-                using (StreamWriter writer = new StreamWriter("DataGame.txt"))
-                {
-                    writer.Write($"{level}");
-                }
-            }*/
+            using (StreamWriter writer = new StreamWriter("DataGame.txt"))
+            {
+                writer.Write($"{level}");
+            }
         }
 
         protected override void Draw(GameTime gameTime)

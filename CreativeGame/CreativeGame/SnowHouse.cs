@@ -27,14 +27,18 @@ namespace CreativeGame
             {
                 if (collider.GameObject().Name == "player")
                 {
-                    if(_game.nrCoins == 2)
+                    if(_game.nrCoins == 3)
                     {
-                        //_game.isWin = true;
-                        _game._soundFinishLevel.Play();
-                        _game.level++;
-                        _game.nrCoins = 0;
-                        _game.SaveGame();
-                        _game.restart();
+                        if (_game.level == 1)
+                            _game.isWin = true;
+                        else
+                        {
+                            _game._soundFinishLevel.Play();
+                            _game.level++;
+                            _game.nrCoins = 0;
+                            _game.SaveGame();
+                            _game.restart();
+                        } 
                     }
 
                 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_2.png</SourceFile>
-  <SourceTime>2021-06-12T17:00:14.1947272+01:00</SourceTime>
-  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Explosion/explosion_2.xnb</DestFile>
-  <DestTime>2021-06-14T00:47:11.6041199+01:00</DestTime>
+  <SourceFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Explosion/explosion_2.png</SourceFile>
+  <SourceTime>2021-05-14T12:59:09+01:00</SourceTime>
+  <DestFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Explosion/explosion_2.xnb</DestFile>
+  <DestTime>2021-06-14T16:11:08.4111482+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
