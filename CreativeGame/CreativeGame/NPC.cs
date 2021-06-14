@@ -32,12 +32,6 @@ namespace CreativeGame
             _idleFrames = _textures; // loaded by the base construtor
             _direction = Direction.Left;
 
-            // _walkFrames = Enumerable.Range(1, 10)
-            //     .Select(
-            //         n => game.Content.Load<Texture2D>($"Walk_{n}")
-            //     )
-            //     .ToList();
-
             _game = game;
 
             AddRectangleBody(_game.Services.GetService<World>(), width: _size.X / 2f); // kinematic is false by default

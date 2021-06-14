@@ -46,7 +46,7 @@ namespace CreativeGame
 
             Body.OnCollision = (a, b, contact) =>
             {
-                string[] ignore = { "player", "bullet", "explosion" };
+                string[] ignore = { "player", "bullet", "explosion", "coin" };
                 if (!ignore.Contains(b.GameObject().Name))
                 {
                     _collided = true;
