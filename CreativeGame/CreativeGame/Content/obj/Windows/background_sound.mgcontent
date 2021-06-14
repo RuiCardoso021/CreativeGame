@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</SourceFile>
-  <SourceTime>2021-06-08T01:48:45.4881124+01:00</SourceTime>
-  <DestFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/background_sound.xnb</DestFile>
-  <DestTime>2021-06-13T23:04:22.4849076+01:00</DestTime>
+  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/background_sound.wav</SourceFile>
+  <SourceTime>2021-06-12T17:00:14.4640101+01:00</SourceTime>
+  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/background_sound.xnb</DestFile>
+  <DestTime>2021-06-14T14:39:14.8609803+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

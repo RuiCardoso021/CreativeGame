@@ -37,25 +37,33 @@ namespace CreativeGame.Classes
 
             loadGameButton.Click += LoadGameButton_Click;
 
-            var creditsGameButton = new Button(buttonTexture, buttonFont)
-            {
-                Position = new Vector2(420, 300),
-                Text = "Credits",
-            };
-
-            creditsGameButton.Click += CreditsGameButton_Click;
-
             var highScoreGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(420, 350),
+                Position = new Vector2(420, 300),
                 Text = "HighScore",
             };
 
             highScoreGameButton.Click += HighScoreGameButton_Click;
 
-            var backGameButton = new Button(buttonTexture, buttonFont)
+            var CommandsScoreGameButton = new Button(buttonTexture, buttonFont)
+            {
+                Position = new Vector2(420, 350),
+                Text = "Commands",
+            };
+
+            CommandsScoreGameButton.Click += CommandsGameButton_Click;
+
+            var creditsGameButton = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(420, 400),
+                Text = "Credits",
+            };
+
+            creditsGameButton.Click += CreditsGameButton_Click;
+
+            var backGameButton = new Button(buttonTexture, buttonFont)
+            {
+                Position = new Vector2(420, 450),
                 Text = "Back",
             };
 
@@ -63,7 +71,7 @@ namespace CreativeGame.Classes
 
             var quitGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(420, 450),
+                Position = new Vector2(420, 500),
                 Text = "Quit Game",
             };
 
@@ -75,6 +83,7 @@ namespace CreativeGame.Classes
                 {"loadGame",loadGameButton},
                 {"credits", creditsGameButton},
                 {"highScore", highScoreGameButton},
+                {"commands",  CommandsScoreGameButton},
                 {"back", backGameButton},
                 {"quit",quitGameButton},
             };
@@ -123,6 +132,12 @@ namespace CreativeGame.Classes
         {
             _game.activeMenu = false;
             _game.activeCredits = false;
+            _game.activeCommands = false;
+        }
+
+        public void CommandsGameButton_Click(object sender, EventArgs e)
+        {
+            _game.activeCommands = true;
         }
 
         public override void PostUpdate(GameTime gameTime)

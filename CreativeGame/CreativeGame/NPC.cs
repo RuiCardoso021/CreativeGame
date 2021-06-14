@@ -54,6 +54,12 @@ namespace CreativeGame
                     _status = Status.Die;
                     world.RemoveBody(Body);
                 }
+                else if (b.GameObject().Name == "player")
+                {
+                    System.Diagnostics.Debug.WriteLine("player perde 1 vida");
+                    world.RemoveBody(Body);
+                    _game.restart();
+                }
             };
 
             // Events on foot

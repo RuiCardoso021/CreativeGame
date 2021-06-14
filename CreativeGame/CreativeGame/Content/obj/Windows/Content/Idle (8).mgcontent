@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/Idle (8).png</SourceFile>
-  <SourceTime>2021-06-09T11:46:45.5865765+01:00</SourceTime>
-  <DestFile>F:/Escola/1º LDJD/2º Semestre/tec desenvolvimento jogos/CreativeGame_v.final/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Idle (8).xnb</DestFile>
-  <DestTime>2021-06-13T21:08:33.3243025+01:00</DestTime>
+  <SourceFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/Idle (8).png</SourceFile>
+  <SourceTime>2021-06-12T17:00:14.2106937+01:00</SourceTime>
+  <DestFile>C:/Users/box/Desktop/TDJ/CreativeGame/CreativeGame/CreativeGame/Content/bin/Windows/Content/Idle (8).xnb</DestFile>
+  <DestTime>2021-06-14T00:47:12.1066895+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

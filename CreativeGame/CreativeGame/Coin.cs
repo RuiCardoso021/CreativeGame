@@ -14,11 +14,11 @@ namespace CreativeGame
     {
         private Game1 _game;
         private bool _collided = false;
-        public int nrCoins = 0;
+        
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
-        public Coin(Game game, World world) : base("coin", new Vector2(8f, 1f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
+        public Coin(Game game, World world, Vector2 position ) : base("coin", position, Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"Coin/coin{n + 1}")).ToArray())
         {
             _fps = 20;
 
@@ -29,11 +29,12 @@ namespace CreativeGame
 
             Body.OnCollision = (thisGift, collider, contact) =>
             {
+                
                 if (!_collided && collider.GameObject().Name == "player")
                 {
                     _collided = true;
                     world.RemoveBody(Body);
-                    nrCoins++;
+                    _game.nrCoins++;
                     if (!_game.isSoundActive)
                         _game._catchCoin.Play();
                 }

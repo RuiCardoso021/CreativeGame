@@ -11,71 +11,38 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CreativeGame
 {
-    public class SnowHouse : AnimatedSprite, ITempObject
+    public class SnowHouse : AnimatedSprite
     {
-        private bool rotating = false;
-        public Vector2 ImpactPos;
-        private bool _collided = false;
-        World _world = new World(new Vector2(0, -9.82f));
-        private Vector2 _directon;
-        private HashSet<Fixture> _collisions;
         private Game1 _game;
 
-        public bool Collided => _collided;
-        public bool IsDead() => _currentTexture == 0 && rotating;
-
-        public SnowHouse(Game game, World world) : base("snowhouse", new Vector2(45f, 2f), Enumerable.Range(0, 6).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/Igloo")).ToArray())
+        public SnowHouse(Game game, World world) : base("snowhouse", new Vector2(45f, .5f), new Texture2D[] { game.Content.Load<Texture2D>($"assets/orig/images/Igloo") })
         {
             _fps = 20;
 
-            Body = BodyFactory.CreateCircle(world, 5f, 1f, _position, BodyType.Static, this);
+            _game = (Game1) game;
+
+            Body = BodyFactory.CreateCircle(world, .75f, 1f, _position, BodyType.Static, this);
             Body.IsSensor = true;
             Body.OnCollision = (thisSnowHouse, collider, contact) =>
             {
-                if (!_collided && collider.GameObject().Name == "player")
+                if (collider.GameObject().Name == "player")
                 {
-                    _collided = true;
-                    if(_collided && _game.Coin.nrCoins == 3)
+                    if(_game.nrCoins == 2)
                     {
-                        _game.isWin = true;
+                        //_game.isWin = true;
                         _game._soundFinishLevel.Play();
+                        _game.level++;
+                        _game.nrCoins = 0;
+                        _game.SaveGame();
+                        _game.restart();
                     }
-                    
+
                 }
-            };
-
-            _collisions = new HashSet<Fixture>();
-
-            _game = (Game1)game;
-
-            AddRectangleBody(_game.Services.GetService<World>(), width: _size.X*2); // kinematic is false by default
-
-            Fixture sensor = FixtureFactory.AttachRectangle(_size.X, _size.Y, 4, new Vector2(0, -_size.Y*2), Body);
-            sensor.IsSensor = true;
-
-            sensor.OnCollision = (a, b, contact) =>
-            {
-                string[] accept = { "player" };
-                if (accept.Contains(b.GameObject().Name))
-                {
-                    _collisions.Add(b);  // FIXME FOR BULLETS
-                    if(_game.Coin.nrCoins == 1)
-                    {
-                        _game.isWin = true;
-                        _game._soundFinishLevel.Play();
-                    }
-                    
-                }
-            };
-            sensor.OnSeparation = (a, b, contact) =>
-            {
-                _collisions.Remove(b);
             };
         }
 
         public override void Update(GameTime gameTime)
         {
-            if (_currentTexture > 0) rotating = true;
             base.Update(gameTime);
         }
 

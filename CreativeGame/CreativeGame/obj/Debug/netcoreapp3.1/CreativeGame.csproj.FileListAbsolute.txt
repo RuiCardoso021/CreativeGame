@@ -741,3 +741,10 @@ F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\C
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\obj\Debug\netcoreapp3.1\CreativeGame.genruntimeconfig.cache
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
 F:\Escola\1º LDJD\2º Semestre\tec desenvolvimento jogos\CreativeGame_v.final\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Background\BG1.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Coin\coin0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile000.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\tile001.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v0.xnb
+C:\Users\box\Desktop\TDJ\CreativeGame\CreativeGame\CreativeGame\bin\Debug\netcoreapp3.1\Content\Sound\v1.xnb

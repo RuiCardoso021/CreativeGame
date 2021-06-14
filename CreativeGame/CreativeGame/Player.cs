@@ -50,22 +50,10 @@ namespace CreativeGame
 
             sensor.OnCollision = (a, b, contact) =>
             {
-                if (b.GameObject().Name == "enemy")
-                {
-                    System.Diagnostics.Debug.WriteLine("player perde 1 vida"); //se player morre 2x ao bater com os pes na cabeça do inimigo
-                                                                               // buga e player nao pode jogar na 3ª vida, faz GameOver
-                    _game.restart();
-                }else if (b.GameObject().Name == "snowhouse")
-                {
-                    if(_game.Coin.nrCoins == 1)
-                    {
-                        _game.level++;
-                        _game.SaveGame();
-                        _game.restart();
-                    }
-                }
-                else if (b.GameObject().Name != "bullet")
+                
+                if (b.GameObject().Name != "bullet")
                     _isGrounded = true;
+                
 
                //if (b.GameObject().Name == "enemy") //ta a morrer qd bate com o collider dos pes no inimigo
                //{
@@ -135,7 +123,7 @@ namespace CreativeGame
             base.Update(gameTime);
             Camera.LookAt(_position);
 
-            if(_position.Y < -5f)
+            if(_position.Y < -25f)
             {
                 _game.restart();
             }
