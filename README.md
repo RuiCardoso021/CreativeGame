@@ -20,11 +20,10 @@ Se o jogador perder todas as vidas aparece o ecrã de derrota, caso consiga pass
 
 ## Teclas:
 
-Mover para cima - W\
 Mover para esquerda - A\
 Mover para direita - D\
-Mover para baixo - S\
 Disparar - Enter\
+Saltar - Espaco\
 Dar restart - R\
 Dar mute - V\
 Pausa - P\
