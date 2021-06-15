@@ -64,8 +64,6 @@ namespace CreativeGame
         {
             IsMouseVisible = true;
             screenRectangle = new Rectangle(0, 0, 1024, 768);
-            //this.Life.rectLife.X = (screenRectangle.Width / 2)/* - (this.Life.rectLife.Width / 2)*/;
-            //this.Life.rectLife.Y = (screenRectangle.Height / 2) /*- (this.Life.rectLife.Height / 2)*/;
 
             _graphics.PreferredBackBufferHeight = screenRectangle.Height;
             _graphics.PreferredBackBufferWidth = screenRectangle.Width;
@@ -143,14 +141,14 @@ namespace CreativeGame
         public void loadLevel_2()
         {
             _scene = new Scene(this, levelNames[level]);
-            _player = new Player(this, _world, new Vector2(5f, 10f));//ok
-            _npc = new NPC(this, _world, new Vector2(9f, 10f));//dar fix
-            _snowHouse = new SnowHouse(this, _world, new Vector2(33f, 10f));//ok
-            _snowBall = new SnowBall(this);//ok
-            _coin = new Coin(this, _world, new Vector2(9.5f, 10f));//ok
-            _coin2 = new Coin(this, _world, new Vector2(23.5f, 7f));//ok
-            _coin3 = new Coin(this, _world, new Vector2(41f, 14f));//ok
-            _gift = new Gift(this, _world, new Vector2(2f, 9.25f));//ok
+            _player = new Player(this, _world, new Vector2(4f, 10f));
+            _npc = new NPC(this, _world, new Vector2(46.5f, 4.5f));//dar fix
+            _snowHouse = new SnowHouse(this, _world, new Vector2(32f, 10f));
+            _snowBall = new SnowBall(this);
+            _coin = new Coin(this, _world, new Vector2(9.5f, 10f));
+            _coin2 = new Coin(this, _world, new Vector2(23.5f, 7f));
+            _coin3 = new Coin(this, _world, new Vector2(41f, 14f));
+            _gift = new Gift(this, _world, new Vector2(2f, 9.25f));
         }
 
         public void iniciarJogo()
@@ -226,14 +224,22 @@ namespace CreativeGame
 
                         _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
                         _player.Update(gameTime);
-                        if (!_npc.IsDead()) _npc.Update(gameTime);
-                        //_enemy2.Update(gameTime);
                         _snowHouse.Update(gameTime);
-                        //_snowBall.Update(gameTime);
-                        if (!_coin.IsDead()) _coin.Update(gameTime);
-                        if (!_coin2.IsDead()) _coin2.Update(gameTime);
-                        if (!_coin3.IsDead()) _coin3.Update(gameTime);
-                        if (!_gift.IsDead()) _gift.Update(gameTime);
+
+                        if (!_npc.IsDead()) 
+                            _npc.Update(gameTime);
+                       
+                        if (!_coin.IsDead()) 
+                            _coin.Update(gameTime);
+
+                        if (!_coin2.IsDead())
+                            _coin2.Update(gameTime);
+
+                        if (!_coin3.IsDead()) 
+                            _coin3.Update(gameTime);
+
+                        if (!_gift.IsDead()) 
+                            _gift.Update(gameTime);
 
                         if (Keyboard.GetState().IsKeyUp(Keys.V))
                         {
@@ -255,9 +261,6 @@ namespace CreativeGame
                         else
                             isVDown = false;
                     }
-                    /*else if(activeMenu == false && activeCredits == true)
-                    {
-                    }*/
                     else
                     {
                         if (_nextState != null)
@@ -289,17 +292,15 @@ namespace CreativeGame
             _spriteBatch.Begin();
             Rectangle background = new Rectangle(new Point(0, 0), new Point(1024, 768));
             _spriteBatch.Draw(_background, background, null, Color.White);
-
             
-
             //Verifica se e vitoria
             if (isWin)
             {
                 Vector2 windowSize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
 
-                //Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
-                //pixel.SetData(new[] { Color.White });
-                //_spriteBatch.Draw(pixel, new Rectangle(Point.Zero, windowSize.ToPoint()), new Color(Color.Gold, 0.1f));
+                Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
+                pixel.SetData(new[] { Color.White });
+                _spriteBatch.Draw(pixel, new Rectangle(Point.Zero, windowSize.ToPoint()), new Color(Color.Gold, 0.1f));
 
                 //Desenha mensagem de vitoria
                 string win = $"You Win!!!";
@@ -344,34 +345,30 @@ namespace CreativeGame
                 else
                     _spriteBatch.Draw(imgUnmuted, new Vector2(885f, 40f), Color.White);
 
-                if (lifeCount == 3)
-                {
-                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), new Rectangle(0, 0, 0, 0),Color.White, 0, new Vector2(0,0), new Vector2(0, 0), 0,3);
-                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
-                    _spriteBatch.Draw(lifeImg, new Vector2(50f, 0f), Color.White);
-                    _spriteBatch.Draw(lifeImg, new Vector2(100f, 0f), Color.White);
-                }
-                else if (lifeCount == 2)
-                {
-                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
-                    _spriteBatch.Draw(lifeImg, new Vector2(50f, 0f), Color.White);
-                }
-                else if (lifeCount == 1)
-                    _spriteBatch.Draw(lifeImg, new Vector2(0f, 0f), Color.White);
-
+                for (int i = 0; i < lifeCount; i++)
+                    _spriteBatch.Draw(lifeImg, new Vector2(i * 50f, 0f), Color.White);
+                
                 _spriteBatch.Draw(coinImg, new Vector2(300, 40), Color.White);
                 _spriteBatch.DrawString(_buttonFont, $"{nrCoins:F0}",new Vector2(350, 50f),Color.White);
                 _spriteBatch.DrawString(_buttonFont, $"Time: {contMinLvlTime}:{lvlTime:F0}",new Vector2(600, 50f), Color.White);
                 _scene.Draw(_spriteBatch, gameTime);
-                if (!_npc.IsDead()) _npc.Draw(_spriteBatch, gameTime);
                 _snowHouse.Draw(_spriteBatch, gameTime);
-                //_snowBall.Draw(_spriteBatch, gameTime);
                 _player.Draw(_spriteBatch, gameTime);
-                //_enemy2.Draw(_spriteBatch, gameTime);
-                if (!_coin.IsDead()) _coin.Draw(_spriteBatch, gameTime);
-                if (!_coin2.IsDead()) _coin2.Draw(_spriteBatch, gameTime);
-                if (!_coin3.IsDead()) _coin3.Draw(_spriteBatch, gameTime);
-                if (!_gift.IsDead()) _gift.Draw(_spriteBatch, gameTime);
+
+                if (!_npc.IsDead()) 
+                    _npc.Draw(_spriteBatch, gameTime);
+
+                if (!_coin.IsDead()) 
+                    _coin.Draw(_spriteBatch, gameTime);
+
+                if (!_coin2.IsDead()) 
+                    _coin2.Draw(_spriteBatch, gameTime);
+
+                if (!_coin3.IsDead()) 
+                    _coin3.Draw(_spriteBatch, gameTime);
+
+                if (!_gift.IsDead()) 
+                    _gift.Draw(_spriteBatch, gameTime);
                
                 
             }
@@ -403,7 +400,6 @@ namespace CreativeGame
                     _spriteBatch.Draw(_background2, background, null, Color.White);
                     _currentState.Draw(gameTime, _spriteBatch);
                 }
-                
             }
 
             //Verifica se e derrota
