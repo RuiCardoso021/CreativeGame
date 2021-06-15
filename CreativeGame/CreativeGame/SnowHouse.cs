@@ -33,12 +33,13 @@ namespace CreativeGame
                             _game.isWin = true;
                         else
                         {
-                            _game._soundFinishLevel.Play();
+                            if(!_game.isSoundActive)
+                                _game._soundFinishLevel.Play();
                             _game.level++;
-                            _game.lifeCount = 3;
                             _game.nrCoins = 0;
                             _game.SaveGame();
                             _game.restart();
+                            _game.lifeCount = 3;
                         } 
                     }
 

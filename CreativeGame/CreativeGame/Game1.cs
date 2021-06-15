@@ -307,7 +307,7 @@ namespace CreativeGame
                 Vector2 winMeasures = _buttonFont.MeasureString(win) / 2f;
                 Vector2 windowCenter = windowSize / 2f;
                 Vector2 pos = windowCenter - winMeasures;
-                _spriteBatch.DrawString(_buttonFont, win, pos, Color.Red);
+                _spriteBatch.DrawString(_buttonFont, win, new Vector2(pos.X, pos.Y/2), Color.Red);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.R))
