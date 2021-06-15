@@ -81,7 +81,7 @@ namespace CreativeGame
             {
                 if(game.Gift.nrGifts > 0)
                 {
-                    Bullet bullet = new Bullet(_snowBall, _position, dir, game.Services.GetService<World>());
+                    Bullet bullet = new Bullet(_game, world, _position, dir);
                     _objects.Add(bullet);
                     if (!_game.isSoundActive) 
                         _game._soundThrowSnowball.Play();

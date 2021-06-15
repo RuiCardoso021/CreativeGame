@@ -11,9 +11,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CreativeGame
 {
-    public class Bullet : GameObject, ITempObject
+    public class Bullet : AnimatedSprite, ITempObject
     {
-        private Texture2D _texture;
         private Vector2 _directon;
         private float _speed;
         private float _maxDistance = 10f; // tempo de vida
@@ -25,10 +24,9 @@ namespace CreativeGame
 
         public Vector2 ImpactPos;
 
-        public Bullet(Texture2D texture, Vector2 startingPos, Vector2 direction, World world) : base("bullet", startingPos)
+        public Bullet(Game game, World world, Vector2 startingPos, Vector2 direction) : base("bullet", startingPos, Enumerable.Range(0, 8).Select(n => game.Content.Load<Texture2D>($"SnowBall/bola{n}")).ToArray())
         {
             _origin = startingPos;
-            _texture = texture;
             _anchor = _texture.Bounds.Size.ToVector2() / 2f;
             // Speed
             _speed = direction.Length();
@@ -58,16 +56,8 @@ namespace CreativeGame
         public override void Update(GameTime gameTime)
         {
             _position = Body.Position + (_size.Y / 2f - _size.X / 2f) * _directon;
+            base.Update(gameTime);
         }
 
-        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-        {
-            Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
-            scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
-
-            spriteBatch.Draw(_texture,Camera.Position2Pixels(_position), null,Color.White, _rotation,_anchor, scale, SpriteEffects.None,0);
-
-            base.Draw(spriteBatch, gameTime);
-        }
     }
 }
