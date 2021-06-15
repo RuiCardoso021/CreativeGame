@@ -517,7 +517,7 @@
 /processorParam:Quality=Best
 /build:dying.wav
 
-#begin Explosion/explosion_0.png
+#begin Explosion/tile_1.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -527,9 +527,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_0.png
+/build:Explosion/tile_1.png
 
-#begin Explosion/explosion_1.png
+#begin Explosion/tile_10.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -539,9 +539,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_1.png
+/build:Explosion/tile_10.png
 
-#begin Explosion/explosion_10.png
+#begin Explosion/tile_11.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -551,9 +551,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_10.png
+/build:Explosion/tile_11.png
 
-#begin Explosion/explosion_11.png
+#begin Explosion/tile_12.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -563,9 +563,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_11.png
+/build:Explosion/tile_12.png
 
-#begin Explosion/explosion_12.png
+#begin Explosion/tile_13.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -575,9 +575,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_12.png
+/build:Explosion/tile_13.png
 
-#begin Explosion/explosion_13.png
+#begin Explosion/tile_14.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -587,9 +587,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_13.png
+/build:Explosion/tile_14.png
 
-#begin Explosion/explosion_14.png
+#begin Explosion/tile_15.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -599,9 +599,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_14.png
+/build:Explosion/tile_15.png
 
-#begin Explosion/explosion_15.png
+#begin Explosion/tile_16.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -611,9 +611,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_15.png
+/build:Explosion/tile_16.png
 
-#begin Explosion/explosion_16.png
+#begin Explosion/tile_17.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -623,9 +623,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_16.png
+/build:Explosion/tile_17.png
 
-#begin Explosion/explosion_17.png
+#begin Explosion/tile_18.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -635,9 +635,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_17.png
+/build:Explosion/tile_18.png
 
-#begin Explosion/explosion_18.png
+#begin Explosion/tile_19.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -647,9 +647,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_18.png
+/build:Explosion/tile_19.png
 
-#begin Explosion/explosion_19.png
+#begin Explosion/tile_2.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -659,9 +659,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_19.png
+/build:Explosion/tile_2.png
 
-#begin Explosion/explosion_2.png
+#begin Explosion/tile_20.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -671,9 +671,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_2.png
+/build:Explosion/tile_20.png
 
-#begin Explosion/explosion_20.png
+#begin Explosion/tile_3.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -683,9 +683,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_20.png
+/build:Explosion/tile_3.png
 
-#begin Explosion/explosion_21.png
+#begin Explosion/tile_4.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -695,9 +695,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_21.png
+/build:Explosion/tile_4.png
 
-#begin Explosion/explosion_22.png
+#begin Explosion/tile_5.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -707,9 +707,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_22.png
+/build:Explosion/tile_5.png
 
-#begin Explosion/explosion_23.png
+#begin Explosion/tile_6.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -719,9 +719,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_23.png
+/build:Explosion/tile_6.png
 
-#begin Explosion/explosion_24.png
+#begin Explosion/tile_7.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -731,9 +731,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_24.png
+/build:Explosion/tile_7.png
 
-#begin Explosion/explosion_3.png
+#begin Explosion/tile_8.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -743,9 +743,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_3.png
+/build:Explosion/tile_8.png
 
-#begin Explosion/explosion_4.png
+#begin Explosion/tile_9.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -755,67 +755,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Explosion/explosion_4.png
-
-#begin Explosion/explosion_5.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Explosion/explosion_5.png
-
-#begin Explosion/explosion_6.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Explosion/explosion_6.png
-
-#begin Explosion/explosion_7.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Explosion/explosion_7.png
-
-#begin Explosion/explosion_8.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Explosion/explosion_8.png
-
-#begin Explosion/explosion_9.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Explosion/explosion_9.png
+/build:Explosion/tile_9.png
 
 #begin fireball.png
 /importer:TextureImporter

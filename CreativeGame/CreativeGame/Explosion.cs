@@ -13,7 +13,7 @@ namespace CreativeGame
         private bool cycled = false;
         public bool IsDead() => _currentTexture == 0 && cycled;
 
-        public Explosion(Game game, Vector2 position) : base("explosion", position, Enumerable.Range(0, 25).Select(n => game.Content.Load<Texture2D>($"Explosion/explosion_{n}")).ToArray())
+        public Explosion(Game game, Vector2 position) : base("explosion", position, Enumerable.Range(1, 20).Select(n => game.Content.Load<Texture2D>($"Explosion/tile_{n}")).ToArray())
         {
             _fps = 20;
         }

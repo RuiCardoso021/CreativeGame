@@ -37,13 +37,13 @@ namespace CreativeGame.Classes
 
             loadGameButton.Click += LoadGameButton_Click;
 
-            var highScoreGameButton = new Button(buttonTexture, buttonFont)
-            {
-                Position = new Vector2(420, 300),
-                Text = "HighScore",
-            };
+            //var highScoreGameButton = new Button(buttonTexture, buttonFont)
+            //{
+            //    Position = new Vector2(420, 300),
+            //    Text = "HighScore",
+            //};
 
-            highScoreGameButton.Click += HighScoreGameButton_Click;
+            //highScoreGameButton.Click += HighScoreGameButton_Click;
 
             var CommandsScoreGameButton = new Button(buttonTexture, buttonFont)
             {
@@ -82,7 +82,7 @@ namespace CreativeGame.Classes
                 {"newGame",newGameButton},
                 {"loadGame",loadGameButton},
                 {"credits", creditsGameButton},
-                {"highScore", highScoreGameButton},
+                //{"highScore", highScoreGameButton},
                 {"commands",  CommandsScoreGameButton},
                 {"back", backGameButton},
                 {"quit",quitGameButton},
