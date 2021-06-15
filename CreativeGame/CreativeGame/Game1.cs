@@ -143,14 +143,14 @@ namespace CreativeGame
         public void loadLevel_2()
         {
             _scene = new Scene(this, levelNames[level]);
-            _player = new Player(this, _world, new Vector2(5f, 10f));
-            _npc = new NPC(this, _world, new Vector2(9f, 10f));
-            _snowHouse = new SnowHouse(this, _world, new Vector2(45f, .5f));
-            _snowBall = new SnowBall(this);
-            _coin = new Coin(this, _world, new Vector2(8f, 1f));
-            _coin2 = new Coin(this, _world, new Vector2(16f, 2f));
-            _coin3 = new Coin(this, _world, new Vector2(40f, 5.5f));
-            _gift = new Gift(this, _world, new Vector2(2f, 0.2f));
+            _player = new Player(this, _world, new Vector2(5f, 10f));//ok
+            _npc = new NPC(this, _world, new Vector2(9f, 10f));//dar fix
+            _snowHouse = new SnowHouse(this, _world, new Vector2(33f, 10f));//ok
+            _snowBall = new SnowBall(this);//ok
+            _coin = new Coin(this, _world, new Vector2(9.5f, 10f));//ok
+            _coin2 = new Coin(this, _world, new Vector2(23.5f, 7f));//ok
+            _coin3 = new Coin(this, _world, new Vector2(41f, 14f));//ok
+            _gift = new Gift(this, _world, new Vector2(2f, 9.25f));//ok
         }
 
         public void iniciarJogo()
