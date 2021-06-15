@@ -20,7 +20,7 @@ namespace CreativeGame
         public bool Catched => _collided;
         public bool IsDead() => Catched;
 
-        public Gift(Game game, World world) : base("gift", new Vector2(2f,0.2f), Enumerable.Range(0, 1).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
+        public Gift(Game game, World world, Vector2 position) : base("gift", position, Enumerable.Range(0, 1).Select(n => game.Content.Load<Texture2D>($"assets/orig/images/gift.9")).ToArray())
         {
             _fps = 20;
 

@@ -15,7 +15,7 @@ namespace CreativeGame
     {
         private Game1 _game;
 
-        public SnowHouse(Game game, World world) : base("snowhouse", new Vector2(45f, .5f), new Texture2D[] { game.Content.Load<Texture2D>($"assets/orig/images/Igloo") })
+        public SnowHouse(Game game, World world, Vector2 position) : base("snowhouse", position, new Texture2D[] { game.Content.Load<Texture2D>($"assets/orig/images/Igloo") })
         {
             _fps = 20;
 

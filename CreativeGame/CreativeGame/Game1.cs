@@ -19,7 +19,6 @@ namespace CreativeGame
         public NPC _npc;
         private World _world;
         private Coin _coin, _coin2, _coin3;
-        private Enemy2 _enemy2;
         private Gift _gift;
         private SnowHouse _snowHouse;
         private SnowBall _snowBall;
@@ -43,7 +42,6 @@ namespace CreativeGame
         public Coin Coin => _coin;
         public Coin Coin2 => _coin2;
         public Coin Coin3 => _coin3;
-        public Enemy2 Enemy2 => _enemy2;
         public Gift Gift => _gift;
         public SnowHouse SnowHouse => _snowHouse;
         public SnowBall SnowBall => _snowBall;
@@ -78,16 +76,6 @@ namespace CreativeGame
 
             new Camera(GraphicsDevice, height: 10f);
             Camera.LookAt(Camera.WorldSize / 2f);
-
-            _player = new Player(this, _world);
-            _npc = new NPC(this, _world);
-            _enemy2 = new Enemy2(this);
-            _snowHouse = new SnowHouse(this, _world);
-            _snowBall = new SnowBall(this);
-            _coin = new Coin(this, _world, new Vector2(8f, 1f));
-            _coin2 = new Coin(this, _world, new Vector2(16f, 2f));
-            _coin3 = new Coin(this, _world, new Vector2(40f, 5.5f));
-            _gift = new Gift(this, _world);
 
             base.Initialize();
         }
@@ -135,33 +123,57 @@ namespace CreativeGame
             _soundGameOver.Volume = _volume - 0.09f;
             _soundWinGame.Volume = _volume;
 
-            //_scene = new Scene(this, "MainScene");
-            _scene = new Scene(this, levelNames[level]);
             _currentState = new MenuState(this, _graphics.GraphicsDevice, Content);
             _buttonFont = Content.Load<SpriteFont>("Fonts/File");
         }
 
-        public void restart()
+        public void loadLevel_1()
         {
-            foreach (Body b in _world.BodyList)
-                _world.RemoveBody(b);
-
-            //_scene = new Scene(this, "MainScene");
             _scene = new Scene(this, levelNames[level]);
-            _player = new Player(this, _world);
-            _npc = new NPC(this, _world);
-            _enemy2 = new Enemy2(this);
-            _snowHouse = new SnowHouse(this, _world);
+            _player = new Player(this, _world, new Vector2(0f, 4f));
+            _npc = new NPC(this, _world, new Vector2(5.5f, 4f));
+            _snowHouse = new SnowHouse(this, _world, new Vector2(45f, .5f));
             _snowBall = new SnowBall(this);
             _coin = new Coin(this, _world, new Vector2(8f, 1f));
             _coin2 = new Coin(this, _world, new Vector2(16f, 2f));
             _coin3 = new Coin(this, _world, new Vector2(40f, 5.5f));
-            _gift = new Gift(this, _world);
+            _gift = new Gift(this, _world, new Vector2(2f, 0.2f));
+        }
+
+        public void loadLevel_2()
+        {
+            _scene = new Scene(this, levelNames[level]);
+            _player = new Player(this, _world, new Vector2(5f, 10f));
+            _npc = new NPC(this, _world, new Vector2(9f, 10f));
+            _snowHouse = new SnowHouse(this, _world, new Vector2(45f, .5f));
+            _snowBall = new SnowBall(this);
+            _coin = new Coin(this, _world, new Vector2(8f, 1f));
+            _coin2 = new Coin(this, _world, new Vector2(16f, 2f));
+            _coin3 = new Coin(this, _world, new Vector2(40f, 5.5f));
+            _gift = new Gift(this, _world, new Vector2(2f, 0.2f));
+        }
+
+        public void iniciarJogo()
+        {
+            foreach (Body b in _world.BodyList)
+                _world.RemoveBody(b);
+
+            if (level == 0)
+                loadLevel_1();
+            else loadLevel_2();
+        }
+
+        public void restart()
+        {
+            iniciarJogo();
+
             lvlTime = 0f;
             contMinLvlTime = 0;
+            nrCoins = 0;
 
             if (!isSoundActive) 
                 _soundDying.Play();
+            
             lifeCount--;
 
             //verifica se jogador perdeu todas vidas

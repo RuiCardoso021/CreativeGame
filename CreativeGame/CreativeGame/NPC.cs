@@ -27,7 +27,7 @@ namespace CreativeGame
         private List<Texture2D> _walkFrames;
         private Vector2 _startingPoint;
 
-        public NPC(Game1 game, World world) : base("enemy", new Vector2(5.5f, 4f), Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
+        public NPC(Game1 game, World world, Vector2 position) : base("enemy", position, Enumerable.Range(0, 27).Select(n => game.Content.Load<Texture2D>($"Inimigo/Screenshot_{n + 1}")).ToArray())
         {
             _idleFrames = _textures; // loaded by the base construtor
             _direction = Direction.Left;

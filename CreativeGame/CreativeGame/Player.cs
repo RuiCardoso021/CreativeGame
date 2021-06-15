@@ -29,7 +29,7 @@ namespace CreativeGame
         private List<Texture2D> _idleFrames;
         private List<Texture2D> _walkFrames;
 
-        public Player(Game1 game, World world) : base("player", new Vector2(0f, 4f), Enumerable.Range(1, 16).Select(n => game.Content.Load<Texture2D>($"Idle ({n})")).ToArray())
+        public Player(Game1 game, World world, Vector2 position_lvl) : base("player", position_lvl, Enumerable.Range(1, 16).Select(n => game.Content.Load<Texture2D>($"Idle ({n})")).ToArray())
         {
             _idleFrames = _textures; // loaded by the base construtor
 

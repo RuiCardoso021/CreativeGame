@@ -105,6 +105,8 @@ namespace CreativeGame.Classes
 
         private void NewGameButton_Click(object sender, EventArgs e)
         {
+            
+            _game.iniciarJogo();
             _game.activeMenu = true;
         }
 
@@ -117,7 +119,7 @@ namespace CreativeGame.Classes
             }
             _game.level = int.Parse(aux);
             _game.activeMenu = true;
-            _game.restart();
+            _game.iniciarJogo();
         }
         private void CreditsGameButton_Click(object sender, EventArgs e)
         {
