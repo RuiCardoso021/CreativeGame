@@ -142,7 +142,7 @@ namespace CreativeGame
         {
             _scene = new Scene(this, levelNames[level]);
             _player = new Player(this, _world, new Vector2(4f, 10f));
-            _npc = new NPC(this, _world, new Vector2(46.5f, 4.5f));//dar fix
+            _npc = new NPC(this, _world, new Vector2(45f, 12f));//dar fix
             _snowHouse = new SnowHouse(this, _world, new Vector2(32f, 10f));
             _snowBall = new SnowBall(this);
             _coin = new Coin(this, _world, new Vector2(9.5f, 10f));
